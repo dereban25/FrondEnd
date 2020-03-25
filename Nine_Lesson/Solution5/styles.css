@@ -11,11 +11,13 @@
 }
 nav {
   line-height: 9px;
+
 }
 .nav-item {
   display: block;
   float: left;
   margin-left: 16px;
+  height: 40px;
   color: white;
 }
 main {

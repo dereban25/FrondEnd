@@ -10,11 +10,11 @@
 .nav {
     height: 40px;
 }
-.nav-item {
-  display: inline-block;
-  text-align: middle;
-  margin-left: 16px;
-  color: white;
+li {
+    margin-left: 16px;
+    color: white;
+    display: inline;
+	vertical-align: middle;
 }
 main {
   height: 5000px;

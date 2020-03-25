@@ -8,18 +8,15 @@
   height: 40px;
   z-index: 1;
   /* line-height: 18px; */
-
 }
-.nav-list{
-    line-height: 9.2px;
+.nav-list {
+  line-height: 9px;
 }
-.nav-item{
-    /* margin-top: 5px; */
-    /* line-height:18.4px; */
-    display: inline;
-    /* vertical-align: center; */
-    margin-left: 16px;
-    color: white;
+.nav-item {
+  display: block;
+  float: left;
+  margin-left: 16px;
+  color: white;
 }
 main {
   height: 5000px;

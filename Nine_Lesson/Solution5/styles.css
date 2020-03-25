@@ -13,9 +13,8 @@
   line-height: 9px;
   height: 40px;
 } */
-ul {
+/* ul {
   height: 40px;
-  line-height: 10px;
 }
 .nav-item {
   display: block;
@@ -23,6 +22,17 @@ ul {
   margin-left: 16px;
   color: white;
   height: 40px;
+} */
+.nav-list {
+    margin: 0;
+    line-height: 40px;
+    list-style: none;
+}
+
+.nav-item {
+    float: left;
+    margin-left: 16px;
+    color: white;
 }
 main {
   height: 5000px;

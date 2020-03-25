@@ -9,8 +9,8 @@
   z-index: 1;
   /* line-height: 18px; */
 }
-.nav-list {
-  line-height: 18px;
+nav {
+  line-height: 9px;
 }
 .nav-item {
   display: block;

@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+.header {
+  background: darkturquoise;
+  height: 40px;
+}
+.nav {
+  display: block;
+  position: relative;
+}
+li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 40px;
+  margin: 16px;
+  color: white;
+  float: left;
+}
+main {
+  height: 5000px;
+  background: beige;
+}
+.head {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: aquamarine;
+}
+.ear {
+  width: 40px;
+  height: 60px;
+  background: brown;
+}
+.eye {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: grey;
+}
+.ear_right {
+  position: relative;
+  top: -30%;
+  right: -20%;
+  float: right;
+}
+.ear_left {
+  position: relative;
+  top: -30%;
+  left: -20%;
+  float: left;
+}
+.eye_left {
+  position: relative;
+  padding-top: 80px;
+  float: left;
+}
+.eye_right {
+  position: relative;
+  margin-top: 80px;
+  float: right;
+}

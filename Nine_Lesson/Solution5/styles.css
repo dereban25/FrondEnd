@@ -10,7 +10,7 @@
 .nav {
     height: 40px;
 }
-li {
+.nav-item {
     margin-left: 16px;
     color: white;
     display: inline;

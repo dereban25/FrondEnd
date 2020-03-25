@@ -9,14 +9,14 @@
   z-index: 1;
   /* line-height: 18px; */
 }
-nav {
-    line-height: 9px;
+/* nav {
+  line-height: 9px;
   height: 40px;
-}
+} */
 ul {
   height: 40px;
+  line-height: 10px;
 }
-
 .nav-item {
   display: block;
   float: left;

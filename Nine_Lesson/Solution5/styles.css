@@ -12,7 +12,7 @@
     height: 40px;
 }
 .nav-item {
-  display: inline-block;
+  display: inline;
   vertical-align: center;
   margin-left: 16px;
   color: white;

@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         *{
-            box-sizing: border-box;
+	        box-sizing : border-box;
         }
         .header{
 	        display     : flex;
@@ -22,7 +22,7 @@
 	        display    : flex;
         }
         .navigation{
-	        margin          : 0;
+	        margin          : 16px;
 	        display         : flex;
 	        list-style-type : none;
         }
@@ -42,15 +42,26 @@
 	        display   : flex;
         }
         .dashboard{
-            display : flex;
-            justify-content : center;
-            align-items : center;
-	        flex-grow : 1;
-            background-color : pink;
+	        display          : flex;
+	        justify-content  : center;
+	        align-items      : center;
+	        flex-grow        : 1;
+	        background-color : pink;
         }
         .news{
-            width: 200px;
-            background-color : gray;
+	        width            : 200px;
+	        background-color : grey;
+            /*display: flex;*/
+            /*justify-content : center;*/
+            /*align-items : center;*/
+        }
+        .news>h2{
+            display: flex;
+            justify-content: center;
+        }
+       
+        .list{
+        line-height: 40px;
         }
 
     </style>
@@ -69,13 +80,12 @@
         <h2>I can use Flexbox!!!</h2>
     </section>
     <aside class="news">
-        <h2>News
-            <ul>
+        <h2>News</h2>
+            <ul class="list">
                 <li>News 1</li>
                 <li>News 2</li>
                 <li>News 3</li>
             </ul>
-        </h2>
     </aside>
  </main>
 <footer class="footer"><span class="footer__item">Footer</span></footer>

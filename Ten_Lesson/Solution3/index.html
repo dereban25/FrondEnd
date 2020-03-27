@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous"/>
+
+    <title>Document</title>
+    <style>
+        .header{
+	        display     : flex;
+	        height      : 40px;
+	        background  : yellow;
+	        align-items : center;
+        }
+        .footer{
+	        height     : 40px;
+	        background : green;
+	        display    : flex;
+        }
+        .navigation{
+	        margin          : 0;
+	        display         : flex;
+	        list-style-type : none;
+        }
+        .navigation__item{
+	        margin-right : 10px;
+        }
+        .footer__item{
+	        margin : auto;
+        }
+        .page{
+	        display        : flex;
+	        flex-direction : column;
+	        min-height     : 100vh;
+        }
+        .content{
+	        flex-grow : 1;
+	        display   : flex;
+        }
+        .dashboard{
+            display : flex;
+            justify-content : center;
+            align-items : center;
+	        flex-grow : 1;
+            background-color : pink;
+        }
+        .news{
+            width: 200px;
+            background-color : gray;
+        }
+
+    </style>
+</head>
+<body>
+<div class="page">
+<header class="header">
+        <ul class="navigation">
+            <li class="navigation__item">About</li>
+            <li class="navigation__item">Products</li>
+            <li class="navigation__item">Contacts</li>
+        </ul>
+</header>
+ <main class="content">
+    <section class="dashboard">
+        <h2>I can use Flexbox!!!</h2>
+    </section>
+    <aside class="news">
+        <h2>News
+            <ul>
+                <li>News 1</li>
+                <li>News 2</li>
+                <li>News 3</li>
+            </ul>
+        </h2>
+    </aside>
+ </main>
+<footer class="footer"><span class="footer__item">Footer</span></footer>
+</div>
+</body>
+</html>

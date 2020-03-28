@@ -1,15 +1,23 @@
 main{
     display: flex;
-    /*flex-direction: row;*/
     flex-wrap: wrap;
 }
 .article{
     margin: 8px;
     padding: 16px;
-    flex : 1;
+    /*flex-direction: row;*/
+    flex : 1 300px;
+    flex-basis: 100px;
+    /*flex-grow: 1;*/
+    /*flex-shrink: 1;*/
     background: bisque;
-    min-width: 300px;
     /*width: 200px;*/
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content:space-around ;
+    /*min-width: 300px;*/
 }
 header{
     display: flex;

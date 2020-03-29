@@ -6,10 +6,10 @@
     flex-wrap: wrap;
 }
 .article{
-    margin: 16px;
+    margin: 8px 8px 0 8px;
     /*height: 100px;*/
-    flex-basis: 90px;
-    padding:8px;
+    flex-basis: 100px;
+    padding:16px;
     flex-grow: 1;
     flex-shrink: 1;
     background: bisque;

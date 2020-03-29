@@ -8,7 +8,7 @@
 .article{
     margin: 8px;
     /*height: 100px;*/
-    flex-basis: auto;
+    flex-basis: 110px;
     padding:16px;
     flex-grow: 1;
     flex-shrink: 1;

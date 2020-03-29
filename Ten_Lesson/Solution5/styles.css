@@ -1,12 +1,13 @@
-*{
-    box-sizing: border-box;
-}
+/**{*/
+/*    box-sizing: border-box;*/
+/*}*/
 .articles-list{
     display: flex;
     flex-wrap: wrap;
 }
 .article{
     margin: 8px;
+    /*height: 100px;*/
     flex-basis: 100px;
     padding: 16px;
     flex-grow: 1;

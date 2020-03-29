@@ -4,18 +4,21 @@
 .articles-list{
     display: flex;
     flex-wrap: wrap;
+    list-style-type : none;
 }
 .article{
     margin: 8px;
     /*height: 100px;*/
     flex-basis: 100px;
+    border: 0;
     padding:16px;
     flex-grow: 1;
     flex-shrink: 1;
     background: bisque;
     min-width: 300px;
-    align-items: center;
-    justify-content: center;
+    align-items: self-start;
+    /*list-style: none;*/
+    /*justify-content: center;*/
 }
 header{
     display: flex;

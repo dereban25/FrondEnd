@@ -8,13 +8,14 @@
 .article{
     margin: 8px;
     /*height: 100px;*/
-    flex-basis: 120px;
+    flex-basis: 100px;
     padding:16px;
     flex-grow: 1;
     flex-shrink: 1;
     background: bisque;
     min-width: 300px;
     align-items: center;
+    justify-content: space-around;
 }
 header{
     display: flex;

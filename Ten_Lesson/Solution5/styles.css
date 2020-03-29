@@ -1,15 +1,15 @@
-/**{*/
-/*    box-sizing: border-box;*/
-/*}*/
+*{
+    box-sizing: border-box;
+}
 .articles-list{
     display: flex;
     flex-wrap: wrap;
 }
 .article{
-    margin: 8px;
+    margin: 16px;
     /*height: 100px;*/
     flex-basis: 100px;
-    padding: 16px;
+    padding:8px;
     flex-grow: 1;
     flex-shrink: 1;
     background: bisque;

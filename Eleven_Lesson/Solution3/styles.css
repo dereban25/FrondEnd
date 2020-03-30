@@ -1,31 +1,33 @@
-.menu-button{
+.dropdown{
     position: relative;
+    display: inline-block;
+    margin: 16px;
+}
+.menu-button{
+    /*position: relative;*/
     padding    : 16px;
     background : darkgreen;
     font-size  : 16px;
     color      : white;
     cursor     : pointer;
+    z-index: 0;
 }
 .menu-list{
-    position         : fixed;
-    top:50px;
+    position         : absolute;
     list-style-type  : none;
     color            : black;
     background-color : lightcyan;
     box-shadow       : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    /*display          : none;*/
+    display          : none;
+    min-width: 120px;
     margin           : 0;
     padding          : 0;
+    z-index : 1;
 }
 .dropdown:hover .menu-list{
     display : block;
-    z-index : 1;
-    min-width: 120px;
     background-color: ghostwhite;
 }
 .menu-item{
     padding: 16px;
-}
-.dropdown{
-    margin : 16px;
 }

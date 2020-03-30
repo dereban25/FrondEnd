@@ -19,7 +19,7 @@
 .menu-list{
     position         : relative;
     display          : block;
-    /*visibility: hidden;*/
+    visibility: hidden;
     top              : 17px;
     list-style-type  : none;
     color            : black;

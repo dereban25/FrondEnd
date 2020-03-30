@@ -41,7 +41,7 @@
 }
 .menu-button:hover{
     position   : relative;
-    padding    : 16px;
+    /*padding    : 16px;*/
     background : darkgreen;
     opacity    : 1;
     font-size  : 16px;

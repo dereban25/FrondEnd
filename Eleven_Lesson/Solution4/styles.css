@@ -27,12 +27,13 @@
     box-shadow       : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin           : 0;
     padding          : 0;
+    min-width: 120px;
     z-index          : auto;
 }
 .dropdown:hover .menu-list{
     position: absolute;
-    /*top              : 40px;*/
-    display          : block;
+    top              : 50px;
+    /*display          : block;*/
     visibility       : visible;
     z-index          : 1;
     min-width        : 120px;

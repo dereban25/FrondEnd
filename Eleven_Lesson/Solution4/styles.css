@@ -5,7 +5,7 @@
     position : relative;
     display  : inline-block;
     margin   : 16px;
-    /*padding  : 16px;*/
+    padding  : 16px;
 }
 .menu-button{
     position   : relative;
@@ -47,6 +47,8 @@
     font-size  : 16px;
     color      : white;
     cursor     : pointer;
+    margin   : 16px;
+    padding  : 16px;
 }
 
 .menu-item{

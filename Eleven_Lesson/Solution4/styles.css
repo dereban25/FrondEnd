@@ -17,9 +17,10 @@
     cursor     : pointer;
 }
 .menu-list{
-    position         : absolute;
-    display          : none;
-    top              : 50px;
+    position         : relative;
+    display          : block;
+    /*visibility: hidden;*/
+    top              : 17px;
     list-style-type  : none;
     color            : black;
     background-color : lightcyan;
@@ -29,7 +30,8 @@
     z-index          : auto;
 }
 .dropdown:hover .menu-list{
-    top              : 40px;
+    position: absolute;
+    /*top              : 40px;*/
     display          : block;
     visibility       : visible;
     z-index          : 1;
@@ -48,7 +50,4 @@
 
 .menu-item{
     padding : 16px;
-}
-.dropdown{
-    margin : 16px;
 }

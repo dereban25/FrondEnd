@@ -1,43 +1,53 @@
 *{
-    box-sizing: border-box;
+    box-sizing : border-box;
 }
 .dropdown{
     position : relative;
     display  : inline-block;
-    margin           : 16px;
-    padding          : 16px;}
+    margin   : 16px;
+    padding  : 16px;
+}
 .menu-button{
-    position: relative;
+    position   : relative;
     padding    : 16px;
     background : darkgreen;
-    opacity: 0.8;
+    opacity    : 0.8;
     font-size  : 16px;
     color      : white;
     cursor     : pointer;
 }
 .menu-list{
     position         : absolute;
-    display: block;
-    top:50px;
+    display          : none;
+    top              : 50px;
     list-style-type  : none;
     color            : black;
     background-color : lightcyan;
     box-shadow       : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    visibility: hidden;
     margin           : 0;
     padding          : 0;
-    z-index: auto;
+    z-index          : auto;
 }
 .dropdown:hover .menu-list{
-    top: 40px ;
-    display : block;
-    visibility: visible;
-    z-index : 1;
-    min-width: 120px;
-    background-color: ghostwhite;
+    top              : 40px;
+    display          : block;
+    visibility       : visible;
+    z-index          : 1;
+    min-width        : 120px;
+    background-color : ghostwhite;
 }
+.menu-button:hover{
+    position   : relative;
+    padding    : 16px;
+    background : darkgreen;
+    opacity    : 1;
+    font-size  : 16px;
+    color      : white;
+    cursor     : pointer;
+}
+
 .menu-item{
-    padding: 16px;
+    padding : 16px;
 }
 .dropdown{
     margin : 16px;

@@ -2,9 +2,9 @@
     box-sizing : border-box;
 }
 .dropdown{
-    position : relative;
-    display  : inline-block;
-    margin   : 16px;
+    /*position : relative;*/
+    display : inline-block;
+    margin  : 16px;
 }
 .menu-button{
     position   : relative;
@@ -21,7 +21,7 @@
 }
 .menu-list{
     position         : absolute;
-    top              : 34px;
+    top              : 40px;
     min-width        : 120px;
     box-shadow       : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color : lightcyan;
@@ -38,7 +38,7 @@
 .dropdown:hover .menu-list{
     position         : absolute;
     visibility       : visible;
-    /*top              : 30px;*/
+    top              : 38px;
     z-index          : 1;
     min-width        : 120px;
     background-color : ghostwhite;

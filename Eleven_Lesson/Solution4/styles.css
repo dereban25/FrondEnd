@@ -16,14 +16,11 @@
     cursor     : pointer;
 }
 .menu-button:hover{
-    /*position : relative;*/
-    opacity  : 1;
-    cursor   : pointer;
+    opacity : 1;
+    cursor  : pointer;
 }
 .menu-list{
     position         : absolute;
-    /*display          : block;*/
-    visibility       : hidden;
     top              : 34px;
     min-width        : 120px;
     box-shadow       : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -33,7 +30,6 @@
     margin           : 0;
     padding          : 0;
 }
-
 .menu-item{
     position : relative;
     display  : block;

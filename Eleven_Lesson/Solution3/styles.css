@@ -1,11 +1,11 @@
-.tooltip{
+.text{
     position      : relative;
     display       : inline-block;
     margin        : 16px;
     border-bottom : 1px dotted black;
     width         : auto;
 }
-.tooltip .tooltip-text{
+.text .tooltip{
     visibility       : hidden;
     width            : 80px;
     background-color : grey;
@@ -17,7 +17,7 @@
     position         : absolute;
     left             : 0;
 }
-.tooltip:hover .tooltip-text{
+.text:hover .tooltip{
     visibility : visible;
     bottom: -40px;
 }

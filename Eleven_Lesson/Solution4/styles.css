@@ -5,7 +5,7 @@
     position : relative;
     display  : inline-block;
     margin   : 16px;
-    padding  : 16px;
+    /*padding  : 16px;*/
 }
 .menu-button{
     position   : relative;
@@ -32,7 +32,7 @@
 }
 .dropdown:hover .menu-list{
     position: absolute;
-    top              : 50px;
+    /*top              : 50px;*/
     /*display          : block;*/
     visibility       : visible;
     z-index          : 1;
@@ -41,16 +41,11 @@
 }
 .menu-button:hover{
     position   : relative;
-    /*padding    : 16px;*/
-    background : darkgreen;
     opacity    : 1;
-    font-size  : 16px;
-    color      : white;
     cursor     : pointer;
-    /*margin   : 16px;*/
-    /*padding  : 16px;*/
+
 }
 
 .menu-item{
-    /*padding : 16px;*/
+    padding : 16px;
 }

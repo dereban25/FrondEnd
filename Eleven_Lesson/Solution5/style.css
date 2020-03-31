@@ -5,6 +5,6 @@ body>.gallery{
 }
 .thumb{
     margin:8px;
-    /*cursor: all-scroll;*/
+    cursor: all-scroll;
     /*overflow: auto;*/
 }

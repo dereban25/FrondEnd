@@ -19,4 +19,5 @@
 }
 .tooltip:hover .tooltip-text{
     visibility : visible;
+    bottom: -40px;
 }

@@ -1,7 +1,7 @@
 body>.gallery{
     display: flex;
 
-    /*overflow: scroll;*/
+    overflow: scroll;
 }
 .thumb{
     margin:8px;

@@ -16,29 +16,34 @@
     cursor     : pointer;
 }
 .menu-list{
-    position         : relative;
-    display          : block;
-    visibility       : hidden;
-    top              : 17px;
+    position         : absolute;
+    /*display          : block;*/
+    visibility : hidden;
+    top              : 34px;
+    min-width: 120px;
+    box-shadow       : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color : lightcyan;
     list-style-type  : none;
     color            : black;
-    background-color : lightcyan;
-    box-shadow       : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin           : 0;
     padding          : 0;
-    min-width        : 120px;
-    z-index          : auto;
-}
-.dropdown:hover .menu-list{
-    position         : absolute;
-    visibility       : visible;
-    z-index          : 1;
-    min-width        : 120px;
-    background-color : ghostwhite;
 }
 .menu-button:hover{
     position : relative;
     opacity  : 1;
     cursor   : pointer;
+}
+.menu-item{
+    position : relative;
+    display  : block;
+    padding  : 16px;
+}
+.dropdown:hover .menu-list{
+    position         : absolute;
+    visibility       : visible;
+    top:30px;
+    z-index          : 1;
+    min-width        : 120px;
+    background-color : ghostwhite;
 }
 

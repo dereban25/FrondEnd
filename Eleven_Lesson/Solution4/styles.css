@@ -5,7 +5,6 @@
     position : relative;
     display  : inline-block;
     margin   : 16px;
-    /*padding  : 16px;*/
 }
 .menu-button{
     position   : relative;
@@ -19,7 +18,7 @@
 .menu-list{
     position         : relative;
     display          : block;
-    visibility: hidden;
+    visibility       : hidden;
     top              : 17px;
     list-style-type  : none;
     color            : black;
@@ -27,25 +26,19 @@
     box-shadow       : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin           : 0;
     padding          : 0;
-    min-width: 120px;
+    min-width        : 120px;
     z-index          : auto;
 }
 .dropdown:hover .menu-list{
-    position: absolute;
-    /*top              : 50px;*/
-    /*display          : block;*/
+    position         : absolute;
     visibility       : visible;
     z-index          : 1;
     min-width        : 120px;
     background-color : ghostwhite;
 }
 .menu-button:hover{
-    position   : relative;
-    opacity    : 1;
-    cursor     : pointer;
-
+    position : relative;
+    opacity  : 1;
+    cursor   : pointer;
 }
 
-.menu-item{
-    padding : 16px;
-}

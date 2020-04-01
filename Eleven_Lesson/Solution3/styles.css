@@ -6,6 +6,7 @@
     width         : auto;
 }
 .text .tooltip{
+    /*position: absolute;*/
     visibility       : hidden;
     width            : 80px;
     background-color : grey;

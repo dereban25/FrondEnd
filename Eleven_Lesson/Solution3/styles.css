@@ -6,7 +6,7 @@
     width         : auto;
 }
 .text .tooltip{
-    /*position: absolute;*/
+    position         : absolute;
     visibility       : hidden;
     width            : 80px;
     background-color : grey;
@@ -15,10 +15,9 @@
     border-radius    : 4px;
     padding          : 8px;
     bottom           : -40px;
-    position         : absolute;
     left             : 0;
 }
 .text:hover .tooltip{
     visibility : visible;
-    bottom: -40px;
+    bottom     : -40px;
 }

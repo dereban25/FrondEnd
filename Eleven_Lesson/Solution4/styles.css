@@ -39,5 +39,5 @@
 .dropdown:hover .menu-list {
     display: block;
     z-index: 1;
-    background-color: ghostwhite;
+    background-color: lightcyan;
 }

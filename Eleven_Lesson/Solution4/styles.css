@@ -41,7 +41,7 @@
 
 .dropdown:hover .menu-list {
     display: block;
-    top:30px;
+    top: 30px;
     z-index: 1;
     background-color: ghostwhite;
 }

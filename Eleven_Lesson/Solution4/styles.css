@@ -15,6 +15,7 @@
     color: white;
     cursor: pointer;
     font-size: 16px;
+    line-height: 34px;
 }
 
 .dropdown:hover {

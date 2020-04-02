@@ -19,9 +19,10 @@
 }
 
 .menu-list {
-    display: none;
+    /* display: none; */
     position: absolute;
-    top: 43px;
+    top: 50px;
+    left: 0;
     color: black;
     list-style-type: none;
     background-color: lightcyan;

@@ -1,46 +1,51 @@
-*{
-    box-sizing : border-box;
-}
-.dropdown{
-    position : relative;
-    display : inline-block;
-    margin  : 16px;
-}
-.menu-button{
-    position   : absolute;
-    padding    : 16px;
-    background : darkgreen;
-    opacity    : 0.8;
-    font-size  : 16px;
-    color      : white;
-    cursor     : pointer;
-}
-.menu-button:hover{
-    opacity : 1;
-    cursor  : pointer;
-}
-.menu-list{
-    position         : absolute;
-    top              : 40px;
-    min-width        : 120px;
-    box-shadow       : 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color : lightcyan;
-    list-style-type  : none;
-    color            : black;
-    margin           : 0;
-    padding          : 0;
-}
-.menu-item{
-    position : relative;
-    display  : block;
-    padding  : 16px;
-}
-.dropdown:hover .menu-list{
-    position         : absolute;
-    visibility       : visible;
-    top              : 38px;
-    z-index          : 1;
-    min-width        : 120px;
-    background-color : ghostwhite;
+* {
+    box-sizing: border-box;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 16px;
+}
+
+.menu-button {
+    position: absolute;
+    padding: 16px;
+    background: darkgreen;
+    opacity: 0.8;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.menu-list {
+    position: absolute;
+    top: 40px;
+    min-width: 120px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: lightcyan;
+    list-style-type: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    position: relative;
+    display: block;
+    padding: 16px;
+}
+
+.dropdown:hover .menu-list {
+    position: absolute;
+    visibility: visible;
+    top: 38px;
+    z-index: 1;
+    min-width: 120px;
+    background-color: ghostwhite;
+}

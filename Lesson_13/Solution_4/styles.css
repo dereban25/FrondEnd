@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 .gallery {
     display: inline-block;
     position: relative;

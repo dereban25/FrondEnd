@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 div > .image {
     float: left;
     width: 200px;

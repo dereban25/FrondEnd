@@ -1,12 +1,11 @@
-*{
-    box-sizing: border-box;
-}
 .gallery {
     display: inline-block;
     position: relative;
 }
 
 div > .image {
+    /*margin: 0;*/
+    padding: 0;
     float: left;
     width: 200px;
     height: 200px;

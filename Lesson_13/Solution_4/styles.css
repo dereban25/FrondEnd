@@ -3,6 +3,7 @@
     padding: 0;
 }
 div > .image {
+    position: relative;
     float: left;
     width: 200px;
     height: 200px;

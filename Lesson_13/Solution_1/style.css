@@ -7,8 +7,8 @@
     height: 500px;
     background-image: url('nature.jpeg');
     background-position: center;
-    background-clip: content-box;
-    /*margin-top: 32px;*/
+    background-clip: padding-box;
+    padding-top: 32px;
     text-align: center;
     color: white;
     font-size: 32px;

@@ -6,6 +6,8 @@
 div > .image {
     /*margin: 0;*/
     /*padding: 0;*/
+    display: inline-block;
+    position: relative;
     float: left;
     width: 200px;
     height: 200px;

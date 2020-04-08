@@ -1,9 +1,15 @@
-/**{*/
-/*    box-sizing: border-box;*/
-/*}*/
-div > .image {
+* {
+    box-sizing: border-box;
+}
+
+.gallery {
     display: flex;
-    flex:none;
+    flex: none;
+}
+
+div > .image {
+    /*display: flex;*/
+    /*flex:none;*/
     /*margin: 0;*/
     /*padding: 0;*/
     float: left;

@@ -12,6 +12,7 @@
 .gallery {
     margin: 50px;
     display: flex;
+    flex: none;
 }
 
 .opacity_filter {

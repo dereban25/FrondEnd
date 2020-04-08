@@ -3,6 +3,7 @@
 /*}*/
 div > .image {
     display: flex;
+    flex:none;
     /*margin: 0;*/
     /*padding: 0;*/
     float: left;

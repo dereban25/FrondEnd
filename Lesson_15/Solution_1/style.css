@@ -1,0 +1,11 @@
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+.image_container {
+    content: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg);
+    display: block;
+    max-width: 100%;
+    margin: 50px auto 0;
+    border-radius: 20px;
+}

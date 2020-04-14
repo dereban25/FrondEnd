@@ -2,19 +2,14 @@
     box-sizing: border-box;
 }
 
-.image-container{
-    /*display: flex;*/
-    /*flex: none;*/
+.image-container {
     margin: 50px;
-
 }
-.image{
+
+.image {
     display: block;
     margin: 0 auto;
     height: auto;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*margin: center;*/
     max-width: 100%;
     border-radius: 20px;
 }

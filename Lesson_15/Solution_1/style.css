@@ -19,7 +19,7 @@
 }
 
 .gallery {
-    margin: 50px;
+    /*margin: 50px;*/
     display: flex;
     /*flex: none;*/
 }

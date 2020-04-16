@@ -6,7 +6,6 @@
     width: 25px;
     height: 25px;
     background-color: #d3d3d3;
-    /*margin: 16px;*/
 }
 
 input[type="checkbox"] {
@@ -14,6 +13,8 @@ input[type="checkbox"] {
 }
 
 .checkbox {
+    display: flex;
+    /*justify-content: left;*/
     position: relative;
     padding-left: 35px;
     margin: 16px;

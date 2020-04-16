@@ -8,9 +8,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 25% auto;
+    margin: 10% auto;
 }
 .login-form{
+    /*display: block;*/
+    /*position: absolute;*/
+    /*top: 25%;*/
+    /*!*left: 50%;*!*/
     background-color: aqua;
     width: 300px;
     font-size: 16px;
@@ -40,6 +44,6 @@ body{
     border-radius:4px;
     text-transform: uppercase;
     color: white;
-    margin-top: 16px;
+    padding-top: 16px;
     width: 100%;
 }

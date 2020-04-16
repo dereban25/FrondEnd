@@ -14,7 +14,7 @@ input[type="checkbox"] {
 
 .checkbox {
     display: flex;
-    /*justify-content: left;*/
+    justify-content: left;
     position: relative;
     padding-left: 35px;
     margin: 16px;

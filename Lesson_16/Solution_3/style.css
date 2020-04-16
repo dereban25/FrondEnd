@@ -6,7 +6,7 @@
     width: 25px;
     height: 25px;
     background-color: #d3d3d3;
-    margin: 0;
+    margin: auto;
 }
 
 input[type="checkbox"] {

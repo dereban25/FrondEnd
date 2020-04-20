@@ -7,10 +7,9 @@ body {
 }
 
 .page {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: auto;
 }
 
 .login-form {
@@ -27,8 +26,8 @@ body {
     text-transform: uppercase;
 }
 
-.form-control {
-    margin-top: 8px;
+.form-control>input {
+    margin-bottom: 8px;
 }
 
 .form-input {
@@ -44,8 +43,8 @@ body {
     border: 3px solid #ff0000;
 }
 
-.form-label {
-    margin-bottom: 4px;
+.form-control>.form-label {
+    padding-bottom: 4px;
 }
 
 .submit-button {

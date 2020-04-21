@@ -17,10 +17,11 @@ input[type="checkbox"] {
     padding-left: 35px;
     margin: 16px;
     font-size: 24px;
-    cursor: pointer;
+    /*cursor: pointer;*/
     /*background-position-x: 0;*/
 }
 
 .checkbox input:checked + .checkmark {
     background-color: #006400;
+    cursor: pointer;
 }

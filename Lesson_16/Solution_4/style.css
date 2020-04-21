@@ -46,8 +46,7 @@ body {
 
 .form-label {
     margin-bottom: 4px;
-    line-height: 8px;
-    text-align: center;
+    line-height: 32px;
 }
 
 .submit-button {

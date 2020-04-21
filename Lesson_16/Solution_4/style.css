@@ -34,7 +34,7 @@ body {
 .form-input {
     text-align: justify;
     padding: 4px;
-    /*outline: none;*/
+    outline: none;
     height: 32px;
     width: 100%;
     border-radius: 4px;
@@ -46,7 +46,7 @@ body {
 
 .form-control>.form-label {
     margin-top: 4px;
-    height: 32px;
+    /*height: 32px;*/
 }
 
 .submit-button {

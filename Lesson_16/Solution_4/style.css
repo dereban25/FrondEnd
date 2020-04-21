@@ -46,6 +46,7 @@ body {
 
 .form-control>.form-label {
     margin-top: 4px;
+    height: 32px;
 }
 
 .submit-button {

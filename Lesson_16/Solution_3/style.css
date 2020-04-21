@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .checkmark {
     position: absolute;
     top: 0;
@@ -12,8 +15,6 @@ input[type="checkbox"] {
 }
 
 .checkbox {
-    top: 0;
-    left: 0;
     display: inline-block;
     position: relative;
     padding-left: 35px;

@@ -46,6 +46,7 @@ body {
 
 .form-label {
     margin-bottom: 4px;
+    text-align: center;
 }
 
 .submit-button {

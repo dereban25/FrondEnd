@@ -27,7 +27,7 @@ body {
     text-transform: uppercase;
 }
 
-.form-control>input {
+.form-control {
     margin-bottom: 8px;
 }
 
@@ -44,9 +44,8 @@ body {
     border: 3px solid #ff0000;
 }
 
-.form-control>.form-label {
+.form-label {
     margin-bottom: 4px;
-    /*height: 32px;*/
 }
 
 .submit-button {

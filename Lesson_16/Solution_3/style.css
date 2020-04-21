@@ -24,4 +24,5 @@ input[type="checkbox"] {
 .checkbox input:checked + .checkmark {
     background-color: #006400;
     cursor: pointer;
+    margin: 16px;
 }

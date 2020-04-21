@@ -46,7 +46,8 @@ body {
 
 .form-label {
     margin-bottom: 4px;
-    line-height: 24px;
+    /*line-height: 24px;*/
+    padding-bottom: 8px;
 }
 
 .submit-button {

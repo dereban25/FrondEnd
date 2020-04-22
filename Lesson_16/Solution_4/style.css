@@ -44,8 +44,9 @@ body {
     border: 3px solid #ff0000;
 }
 
-.form-label {
-    margin-bottom: 4px;
+label {
+    bottom: 4px;
+    position: relative;
 }
 
 .submit-button {

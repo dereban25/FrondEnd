@@ -14,14 +14,12 @@ body {
 }
 
 .login-form {
-    /*position: absolute;*/
     background-color: aqua;
     width: 300px;
     font-size: 16px;
     font-family: monospace;
     padding: 16px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    height: content-box;
 }
 
 .form-title {
@@ -46,7 +44,7 @@ body {
     border: 3px solid #ff0000;
 }
 
-label {
+.form-label {
     margin-bottom: 4px;
     display: block;
 }

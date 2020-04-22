@@ -14,11 +14,10 @@ body {
 }
 
 .login-form {
-    /*display: block;*/
     background-color: aqua;
     width: 300px;
     font-size: 16px;
-    /*font-family: monospace;*/
+    font-family: monospace;
     padding: 16px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: auto;

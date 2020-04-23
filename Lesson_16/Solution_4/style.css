@@ -8,16 +8,14 @@ body {
 
 .page {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 15%;
+    font-size: 16px;
+    font-family: monospace;
 }
 
 .login-form {
     background-color: aqua;
     width: 300px;
-    font-size: 16px;
-    font-family: monospace;
     padding: 16px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: auto;

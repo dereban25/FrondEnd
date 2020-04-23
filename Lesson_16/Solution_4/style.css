@@ -4,13 +4,14 @@
 
 body {
     background-color: bisque;
+    font-size: 16px;
+    font-family: monospace;
 }
 
 .page {
     display: flex;
     margin: 15%;
-    font-size: 16px;
-    font-family: monospace;
+
 }
 
 .login-form {

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+table {
+    margin: 16px;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+td.change {
+    border: unset;
+    background-color: white !important;
+}
+
+tr.para > td:nth-child(odd) {
+    background-color: black;
+}
+
+tr.nopara > td:nth-child(even) {
+    background-color: black;
+}

@@ -15,7 +15,7 @@ table, td, th {
 td, th {
     padding: 4px;
     text-align: right;
-    line-height: 40px;
+    /*line-height: 40px;*/
 }
 
 div {
@@ -31,7 +31,7 @@ tfoot {
 }
 
 caption {
-    margin-bottom: 8px;
+    margin: 8px;
 }
 
 tbody > tr:nth-child(odd) {

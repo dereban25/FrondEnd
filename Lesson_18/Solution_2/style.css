@@ -8,7 +8,7 @@
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     font-weight: 700;
-    vertical-align: middle;
+    text-align: center;
     cursor: pointer;
     border: none;
 }

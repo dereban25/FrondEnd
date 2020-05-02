@@ -4,8 +4,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /*width: 100vw;*/
-
 }
 
 .spinner-text {
@@ -15,22 +13,25 @@
     animation: blinking 2s;
     animation-iteration-count: infinite;
 }
-.second{
+
+.second {
     animation: blinking 2s;
     animation-iteration-count: infinite;
     transition-timing-function: linear;
 }
-.spinner{
+
+.spinner {
     display: flex;
     flex-direction: column;
 }
+
 .rect {
     position: relative;
     width: 10px;
     height: 4px;
     background-color: black;
     border-radius: 2px;
-    animation: moving 2s,blinking 2s;
+    animation: moving 2s, blinking 2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }

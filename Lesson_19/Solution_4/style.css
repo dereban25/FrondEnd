@@ -1,6 +1,13 @@
+*{
+    box-sizing: border-box;
+}
 .block{
     display: flex;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     justify-content: center;
     align-items: center;
     width: 200px;
@@ -15,8 +22,7 @@
     animation: move 2s;
     transition-timing-function: ease;
     animation-fill-mode: backwards;
-    left:50%;
-    top: 0;
+
 }
 @keyframes move {
     from {

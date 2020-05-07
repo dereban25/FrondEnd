@@ -1,5 +1,6 @@
 .spinner {
     display: flex;
+    flex-direction: column;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -18,11 +19,6 @@
     animation: blinking 2s;
     animation-iteration-count: infinite;
     transition-timing-function: linear;
-}
-
-.spinner {
-    display: flex;
-    flex-direction: column;
 }
 
 .rect {

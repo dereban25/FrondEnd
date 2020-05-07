@@ -1,34 +1,28 @@
 *{
     box-sizing: border-box;
 }
-.block{
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    align-items: center;
-    width: 200px;
+div {
+    position: relative;
+    left: calc(50vw - 100px);
+    width: 250px;
     height: 100px;
     border-radius: 10px;
     background-color: coral;
+    animation: move 2s ease forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
     color: white;
-    text-transform: uppercase;
-    animation: move 2s;
-    transition-timing-function: ease;
-    animation-fill-mode: backwards;
-
 }
 @keyframes move {
-    from {
+    0% {
         top: -100px;
     }
-    to{
+    50%{
         top: calc(50vh - 50px);
     }
 }

@@ -27,7 +27,7 @@ span {
 
 .news {
     display: flex;
-    background-color: #00ffff;
+    background-color: #0ff;
     height: 200px;
     flex-grow: 1;
 }

@@ -35,6 +35,7 @@ span {
 @media screen and (min-width: 600px) {
     .products {
         display: flex;
+        width: auto;
         flex-grow: 2;
     }
 }

@@ -19,11 +19,16 @@
     margin-left: $unit;
     padding: $unit;
     border-radius: $border-radius;
-    color:$text-color-secondary;
+    color: $text-color-secondary;
 
+    &_selected {
+      background-color: $color-primary;
+    }
   }
-  &__item:hover{
+
+  &__item:hover {
     opacity: 0.7;
     background-color: $color-primary;
   }
+
 }

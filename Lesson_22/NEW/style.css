@@ -16,6 +16,7 @@ body {
 
 .main {
     flex: 1 0 auto;
+    /* display: flex; */
 }
 
 body {
@@ -102,28 +103,23 @@ body {
 
 @media screen and ( min-width: 600px) {
     .navigation {
-        display: inline-block;
         width: 20%;
         padding: 0.5em;
-        float: left ;
     }
     .section {
-        display: inline-block;
         width: 80%;
         font-size: 1.25em;
         align-items: center;
         padding: 0.5em;
     }
-
+    .container {
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 900px) {
-
-    .section{
-        width:60%;
-    }
-    .navigation{
-        width:20%;
+    .container {
+        width: 80%;
     }
     .news {
         width: 20%;

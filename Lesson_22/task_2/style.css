@@ -2,12 +2,13 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 /*main{*/
 /*    display: flex;*/
 /*    flex-direction: row;*/
 /*}*/
 
- span {
+span {
     margin: auto;
     background-color: #faebd7;
     border-radius: 4px;
@@ -20,7 +21,8 @@
     flex-direction: row;
     background-color: #ff7f50;
     min-height: 200px;
-    /*flex-grow: 1;*/
+    flex-grow: 1;
+    width: 50%;
 }
 
 .products-list {
@@ -28,24 +30,23 @@
     flex-direction: row;
     background-color: #006400;
     min-height: 200px;
-    /*flex-grow: 1;*/
+    flex-grow: 1;
+    width: 50%;
 }
 
 .news {
     display: flex;
     flex-direction: row;
-    background-color: #0ff;
+    background-color: #00ffff;
     min-height: 200px;
-    /*flex-grow: 1;*/
+    flex-grow: 1;
+    width: 50%;
 }
 
 @media screen and (min-width: 600px) {
     .products {
         display: flex;
         flex-basis: 100%;
-        /*flex-direction: row;*/
-        /*border:0;*/
-        /*flex-grow: 1;*/
     }
     .navigation {
         display: flex;
@@ -53,7 +54,7 @@
         background-color: #ff7f50;
         min-height: 200px;
         flex-grow: 1;
-        width:50%;
+        width: 50%;
     }
 
     .products-list {
@@ -62,19 +63,16 @@
         background-color: #006400;
         min-height: 200px;
         flex-grow: 1;
-        width:50%;
+        width: 50%;
     }
-    /*section > div{*/
-    /*    width:50%;*/
-    /*}*/
+
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
     .content {
         display: flex;
         flex-grow: 2;
-        /*flex-direction: row;*/
-        /*width: 33.33%;*/
+
     }
     .navigation {
         display: flex;
@@ -82,7 +80,7 @@
         background-color: #ff7f50;
         min-height: 200px;
         flex-grow: 1;
-        width:50%;
+        width: 50%;
     }
 
     .products-list {
@@ -91,17 +89,16 @@
         background-color: #006400;
         min-height: 200px;
         flex-grow: 1;
-        width:50%;
+        width: 50%;
     }
 
     .news {
         display: flex;
         flex-direction: row;
-        background-color: #0ff;
+        background-color: #00ffff;
         min-height: 200px;
         flex-grow: 1;
-        width:50%;
+        width: 50%;
     }
-
 
 }

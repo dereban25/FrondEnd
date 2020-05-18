@@ -9,21 +9,21 @@ $lg: 1200px;
 }
 
 @mixin for-medium-up {
-  @media screen and(min-width: $sm) {
+  @media screen and(max-width: $md - 1) and (min-width:$sm){
     @content;
   }
 }
-@mixin for-md-up {
-  @media screen and(min-width: $lg) {
+@mixin for-large-up {
+  @media screen and(max-width: $lg - 1) and (min-width:$md){
     @content;
   }
 }
 
-//@mixin for-large-up {
-//  @media screen and(max-width: $lg) {
-//    @content;
-//  }
-//}
+@mixin for-last-up {
+  @media screen and(max-width: $lg) {
+    @content;
+  }
+}
 
 
 

@@ -20,8 +20,11 @@
   @include for-medium-up {
     background-color: $bc_900;
   }
-  @include for-md-up {
+  @include for-large-up {
     background-color: $bc_1200;
+  }
+  @include for-last-up {
+    background-color: $bc_last;
   }
 }
 

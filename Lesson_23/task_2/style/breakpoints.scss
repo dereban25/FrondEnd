@@ -18,14 +18,11 @@ $lg: 1200px;
     @content;
   }
 }
-
 @mixin for-last-up {
-  @media screen and(max-width: $lg) {
+  @media screen and(min-width: $lg) {
     @content;
   }
 }
-
-
 
 $margin: 8px;
 $square_size: 100px;

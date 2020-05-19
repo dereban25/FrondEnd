@@ -15,11 +15,10 @@ header {
 }
 .menu__item {
   padding: 8px;
+  height: 100%;
+  line-height: 3em;
   color: #fff;
   cursor: pointer;
-}
-.menu__item-text {
-  padding: 8px;
 }
 .menu__item:hover {
   display: flex;

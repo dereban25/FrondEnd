@@ -17,12 +17,10 @@ header {
 
   &__item {
     padding: $size;
+    height: 100%;
+    line-height: 3em;
     color: $color_default;
     cursor: pointer;
-
-    &-text {
-      padding: 8px;
-    }
   }
 
   &__item:hover {

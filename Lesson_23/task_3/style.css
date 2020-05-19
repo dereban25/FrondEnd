@@ -15,7 +15,6 @@ header {
 }
 .menu__item {
   padding: 8px;
-  height: 100%;
   line-height: 3em;
   color: #fff;
   cursor: pointer;

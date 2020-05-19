@@ -7,16 +7,16 @@ header {
 
 .menu {
   display: flex;
-  margin: 0;
   padding: 0;
+  margin-top: 0;
   text-transform: uppercase;
   list-style-type: none;
   align-items: center;
   height: $unit;
+  margin-left: $unit;
 
   &__item {
     padding: $size;
-    margin-left: $unit;
     color: $color_default;
     cursor: pointer;
   }
@@ -26,19 +26,28 @@ header {
     background-color: $color_change;
     height: $unit;
     align-items: center;
+  }
+  &__item:hover .submenu{
+    display: block;
+    background-color: $color_list;
+    z-index: 1;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
   }
 
-  &__item_active:hover {
+  &__item_active {
     color: $color_item_active;
   }
-
 }
 
 .submenu {
+  display: none;
   position: absolute;
+  color: $color_default;
   top: $size*6;
   margin: 0;
   padding: $size;
   min-width: $size*15;
+  list-style-type: none;
+
 }

@@ -5,16 +5,16 @@ header {
 
 .menu {
   display: flex;
-  margin: 0;
   padding: 0;
+  margin-top: 0;
   text-transform: uppercase;
   list-style-type: none;
   align-items: center;
   height: 3em;
+  margin-left: 3em;
 }
 .menu__item {
   padding: 8px;
-  margin-left: 3em;
   color: #fff;
   cursor: pointer;
 }
@@ -24,16 +24,25 @@ header {
   height: 3em;
   align-items: center;
 }
-.menu__item_active:hover {
+.menu__item:hover .submenu {
+  display: block;
+  background-color: #ff7f50;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.menu__item_active {
   color: #ffff00;
 }
 
 .submenu {
+  display: none;
   position: absolute;
+  color: #fff;
   top: 48px;
   margin: 0;
   padding: 8px;
   min-width: 120px;
+  list-style-type: none;
 }
 
 * {

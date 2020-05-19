@@ -1,0 +1,44 @@
+@import "variables.scss";
+
+header {
+  background-color: $color_header;
+  height: $unit;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  list-style-type: none;
+  align-items: center;
+  height: $unit;
+
+  &__item {
+    padding: $size;
+    margin-left: $unit;
+    color: $color_default;
+    cursor: pointer;
+  }
+
+  &__item:hover {
+    display: flex;
+    background-color: $color_change;
+    height: $unit;
+    align-items: center;
+
+  }
+
+  &__item_active:hover {
+    color: $color_item_active;
+  }
+
+}
+
+.submenu {
+  position: absolute;
+  top: $size*6;
+  margin: 0;
+  padding: $size;
+  min-width: $size*15;
+}

@@ -19,6 +19,10 @@ header {
     padding: $size;
     color: $color_default;
     cursor: pointer;
+
+    &-text {
+      padding: 8px;
+    }
   }
 
   &__item:hover {
@@ -27,11 +31,12 @@ header {
     height: $unit;
     align-items: center;
   }
-  &__item:hover .submenu{
+
+  &__item:hover .submenu {
     display: block;
     background-color: $color_list;
     z-index: 1;
-    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
   }
 

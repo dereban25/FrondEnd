@@ -16,7 +16,10 @@ header {
   margin-left: $unit;
 
   &__item {
-    padding: $size;
+    display: block;
+    position:relative;
+    margin:0;
+    //padding: $size;
     line-height: 3em;
     color: $color_default;
     cursor: pointer;

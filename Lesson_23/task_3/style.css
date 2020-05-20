@@ -14,7 +14,9 @@ header {
   margin-left: 3em;
 }
 .menu__item {
-  padding: 8px;
+  display: block;
+  position: relative;
+  margin: 0;
   line-height: 3em;
   color: #fff;
   cursor: pointer;

@@ -18,6 +18,7 @@ header {
   position: relative;
   margin: 0;
   padding-left: 8px;
+  padding-right: 8px;
   line-height: 3em;
   color: #fff;
   cursor: pointer;

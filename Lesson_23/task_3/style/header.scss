@@ -51,5 +51,10 @@ header {
   padding: $size;
   min-width: $size*15;
   list-style-type: none;
+  cursor: pointer;
+
+  &__item:hover {
+    color: black;
+  }
 
 }

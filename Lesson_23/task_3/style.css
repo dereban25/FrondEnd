@@ -44,6 +44,10 @@ header {
   padding: 8px;
   min-width: 120px;
   list-style-type: none;
+  cursor: pointer;
+}
+.submenu__item:hover {
+  color: black;
 }
 
 * {

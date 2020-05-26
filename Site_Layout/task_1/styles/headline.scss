@@ -1,0 +1,71 @@
+.headline {
+  display: flex;
+  width: 1140px;
+  //height: 456px;
+  margin: 84px auto auto;
+  position: relative;
+  padding-bottom: 77px;
+
+
+  &__content {
+    position: absolute;
+    z-index: 1;
+  }
+
+  &__title {
+    //font-weight: bold;
+    width: 754px;
+    height: 165px;
+    font-size: 80px;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+    z-index: 1;
+    margin: 0;
+  }
+
+  &__description {
+    width: 456px;
+    height: 102px;
+    margin-top: 34px;
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  &__action-button {
+    margin-top: 58px;
+    //display: flex;
+  }
+
+  &__button_get {
+    background-color: #3040C4;
+    margin-right: 10px;
+    color: #fff;
+    width: 160px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 2px;
+    border: none;
+  }
+
+  &__button_learn {
+    background-color: #FFFFFF;
+    color: #3040C4;
+    width: 158px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 2px;
+    border: none;
+  }
+
+  &__banner {
+    position: relative;
+    margin-left: auto;
+    width: 796px;
+    height: 448px;
+    right: -105px;
+    top: 0;
+  }
+}

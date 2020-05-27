@@ -392,7 +392,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 107px;
+  flex: 1;
   height: 94px;
   border-bottom: 1px solid #E3E3E3;
   border-right: 1px solid #e3e3e3;
@@ -409,6 +409,11 @@
 .feature {
   display: flex;
   position: relative;
+}
+@media screen and (max-width: 399px) {
+  .feature {
+    display: none;
+  }
 }
 .feature__content {
   display: flex;
@@ -487,6 +492,109 @@
 .feature__img-right {
   position: absolute;
   right: 0;
+}
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 8px;
+}
+@media screen and (min-width: 400px) {
+  .tips {
+    display: none;
+  }
+}
+
+.tip {
+  padding: 40px 15px 0 15px;
+  border-bottom: 1px solid #E3E3E3;
+}
+.tip__subtitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: #009B4D;
+}
+.tip__title {
+  margin: 17px 0 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.357143px;
+}
+.tip__description {
+  margin: 15px 0 0;
+  font-size: 24px;
+  line-height: 34px;
+}
+.tip__decoration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 40px;
+}
+.tip__image {
+  margin-top: 30px;
+  max-width: 100%;
+}
+.tip__image-caption {
+  margin-top: 19px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(43, 41, 45, 0.6);
+}
+
+.communicate {
+  position: relative;
+  display: flex;
+  margin-top: 8px;
+}
+@media screen and (min-width: 400px) {
+  .communicate {
+    display: none;
+  }
+}
+
+.communicate_tip {
+  padding: 40px 15px 0 15px;
+  border-bottom: 1px solid #E3E3E3;
+}
+.communicate_tip-subtitle {
+  color: #0189D1;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+}
+.communicate_tip-title {
+  margin: 17px 0 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.357143px;
+}
+.communicate_tip-description {
+  margin: 15px 0 0;
+  font-size: 24px;
+  line-height: 34px;
+}
+.communicate_tip-decoration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 40px;
+}
+.communicate_tip-image {
+  max-width: 100%;
+  margin-top: 30px;
+}
+.communicate_tip-image-caption {
+  margin-top: 19px;
+  color: rgba(43, 41, 45, 0.6);
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 * {

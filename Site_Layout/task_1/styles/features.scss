@@ -1,6 +1,12 @@
+@import "breakpoints.scss";
+
 .feature {
   display: flex;
   position: relative;
+
+  @include for-mobile {
+    display: none;
+  }
 
   &__content {
     display: flex;

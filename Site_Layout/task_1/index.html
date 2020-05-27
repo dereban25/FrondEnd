@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
 		  integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous"/>
 	<link rel="stylesheet" href="style.css">
@@ -29,6 +30,7 @@
 				</a>
 			</nav>
 			<button class="header__button">Get Started</button>
+			<button class="header__button-menu"><span class="header__button-menu-icon"></span></button>
 		</header>
 		<!--		HEADLINE-->
 		<section class="headline">
@@ -60,22 +62,28 @@
 	</section>
 	<!--	CUSTOMERS-->
 	<section class="customers">
-		<img class="customers__logo"
-			 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
-			 alt="New York Times">
-		<img class="customers__logo"
-			 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
-			 alt="">
-		<img class="customers__logo"
-			 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png" alt="">
-		<img class="customers__logo"
-			 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
-			 alt="">
-		<img class="customers__logo"
-			 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png" alt="">
-		<img class="customers__logo"
-			 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
-			 alt="">
+		<div class="customers__row">
+			<div class="customers__item"><img class="customers__logo"
+											  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-nyt.png"
+											  alt="New York Times"></div>
+			<div class="customers__item"><img class="customers__logo"
+											  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-forbes.png"
+											  alt=""></div>
+			<div class="customers__item"><img class="customers__logo"
+											  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-apple.png"
+											  alt=""></div>
+		</div>
+		<div class="customers__row">
+			<div class="customers__item"><img class="customers__logo"
+											  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-mashable.png"
+											  alt=""></div>
+			<div class="customers__item"><img class="customers__logo"
+											  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-wsj.png"
+											  alt=""></div>
+			<div class="customers__item"><img class="customers__logo"
+											  src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/logo-google.png"
+											  alt=""></div>
+		</div>
 	</section>
 	<!--	FEATURES-->
 	<section class="feature">
@@ -109,7 +117,9 @@
 				</div>
 			</div>
 		</div>
-		<img class="feature__img-right" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/invision-screen.png" alt="">
+		<img class="feature__img-right"
+			 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/invision-screen.png"
+			 alt="">
 	</section>
 	<!--	    FOOTER-->
 	<footer class="footer">

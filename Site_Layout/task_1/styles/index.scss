@@ -1,4 +1,4 @@
-@import "header.scss","footer.scss","headline.scss","about.scss","customers.scss","features.scss","breakpoints.scss";
+@import "header.scss", "footer.scss", "headline.scss", "about.scss", "customers.scss", "features.scss", "breakpoints.scss";
 
 * {
   box-sizing: border-box;
@@ -11,14 +11,21 @@ html {
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 1400px;
-  min-height:100vh;
+  width: 100%;
+  overflow: hidden;
+  @include for-desktop {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1400px;
+    min-height: 100vh;
+  }
 
   &__top {
     background-color: #F3C6BD;
-    padding-top: 39px;
+    @include for-desktop {
+      background-color: #F3C6BD;
+      padding-top: 39px;
+    }
   }
 }

@@ -3,6 +3,7 @@
 .feature {
   display: flex;
   position: relative;
+  margin-bottom: 103px;
 
   @include for-mobile {
     display: none;

@@ -1,0 +1,23 @@
+@import 'breakpoints.scss', "variables.scss", 'about.scss', "order.scss", "hiring.scss", "feedback.scss", "audience.scss", "communicate.scss", "inbox.scss", "about.scss", "customers.scss", "tips.scss", 'features.scss', "footer.scss", 'header.scss', 'headline.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Work Sans', sans-serif;
+  color: $text-color-black;
+}
+
+.page {
+  width: 100%;
+  overflow-x: hidden;
+  @include for-sm-up {
+    width: 1400px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}

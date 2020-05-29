@@ -1,0 +1,41 @@
+@import "breakpoints.scss";
+
+.customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__container {
+    display: flex;
+    flex: 1;
+  }
+  &__item {
+    height: 94px;
+    width: 107px;
+    flex: 1;
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid $border-color;
+  }
+  &__item:last-child {
+    border-right: none;
+  }
+  @include for-sm-up {
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__container {
+    flex: 1;
+    justify-content: space-around;
+    width: 100%;
+  }
+  & img {
+    filter: brightness(0);
+    max-width: 80%;
+  }
+}

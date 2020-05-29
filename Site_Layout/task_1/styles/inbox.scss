@@ -1,47 +1,88 @@
+@import "breakpoints.scss";
+
 .inbox {
   display: flex;
-  width: 100%;
-  margin: auto;
-  background-color: #FCF0E399;
+  margin:50px 15px 48px 15px;
+  flex-direction: column;
+  width: 290px;
+  @include for-desktop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    background-color: #FCF0E399;
+  }
+
 
   &__decoration {
     display: flex;
-    flex-direction: column;
-    margin: 142px 0 101px 193px;
+    margin: 0;
+    @include for-desktop {
+      display: flex;
+      flex-direction: column;
+      margin: 142px 0 101px 193px;
+    }
   }
 
   &__column {
     display: flex;
+    margin: 0;
     flex-direction: column;
-    margin: 115px 99px 116px 0;
-    width: 519px;
+    @include for-desktop {
+      display: flex;
+      flex-direction: column;
+      margin: 115px 99px 116px 0;
+      width: 519px;
+    }
   }
 
   &__subtitle {
-    margin: 0 0 0 192px;
+    margin: 0;
     font-weight: 700;
     font-size: 22px;
     line-height: 34px;
     color: #F1592B;
-
+    @include for-desktop {
+      margin: 0 0 0 192px;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 34px;
+      color: #F1592B;
+    }
   }
 
   &__title {
-    margin: 0 0 0 192px;
+    margin: 15px 0 0 0;
     width: 100%;
     padding-top: 24px;
     font-weight: 700;
     font-size: 56px;
     line-height: 56px;
     letter-spacing: -0.5px;
+    @include for-desktop {
+      margin: 0 0 0 192px;
+      width: 100%;
+      padding-top: 24px;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+    }
   }
 
   &__description {
     padding-top: 30px;
-    margin: 0 0 0 192px;
+    margin: 0;
     width: 100%;
     font-size: 24px;
     line-height: 34px;
+    @include for-desktop {
+      padding-top: 30px;
+      margin: 0 0 0 192px;
+      width: 100%;
+      font-size: 24px;
+      line-height: 34px;
+    }
 
   }
 
@@ -49,9 +90,17 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    margin: 44px 0 0 164px;
+    margin: 0;
     border-bottom: 4px solid #0185D0E6;
     width: 100%;
+    @include for-desktop {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      margin: 44px 0 0 164px;
+      border-bottom: 4px solid #0185D0E6;
+      width: 100%;
+    }
 
     &-filltext {
       font-weight: 700;
@@ -62,19 +111,20 @@
       padding: 30px 30px 0 30px;
       font-size: 20px;
       line-height: 28px;
-
-
     }
-
   }
 
 
   &__image-caption {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 22px;
-    color: rgba(43, 41, 45, 0.6);
+    display: none;
+
+    @include for-desktop {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+      color: rgba(43, 41, 45, 0.6);
+    }
   }
 
   &__owner {

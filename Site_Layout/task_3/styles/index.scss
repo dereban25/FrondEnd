@@ -17,7 +17,7 @@ body {
 }
 
 .page {
-  padding: 0;
+  //padding: 0;
   width: 1440px;
   height: 1000px;
   display: flex;
@@ -29,25 +29,18 @@ body {
   display: flex;
 }
 
+
 .container {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 36px;
 }
 
 .price-card:nth-child(2) {
-  margin: 0px 15px 0px 15px;
+  margin: 0 15px 0 15px;
 }
 
-// .price-card:nth-child(1) {
-//     margin: 112px 0 118px 147px;
-// }
-// .price-card:nth-child(2) {
-//     margin: 112px 18px 118px 15px;
-// }
-// .price-card:nth-child(3) {
-//     margin: 109px 0 121px 0px;
-// }
+
 .price-card:nth-child(1) .price-card__title {
   width: 100px;
   height: 64px;
@@ -71,7 +64,7 @@ body {
   background: #334247;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
   &__title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 35px;
     line-height: 43px;
     text-align: center;
@@ -89,26 +82,22 @@ body {
     font-weight: bold;
     font-size: 55px;
     line-height: 67px;
-    margin: 0;
-    margin-top: 38px;
+    margin: 33px 0 0;
     /* identical to box height */
     span {
       margin: auto;
     }
   }
   &__description {
-    margin: 39px auto;
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
     text-align: center;
-    margin-left: 26px;
-    margin-right: 26px;
+    margin: 40px 26px;
     width: 328px;
   }
   &__options-list {
-    margin: 0;
-    margin-top: 42px;
+    margin: 40px 0 0;
   }
   &__option {
     display: flex;
@@ -142,7 +131,7 @@ body {
     /* identical to box height */
     text-transform: uppercase;
     border: none;
-    margin: 37px 113px 42px 112px;
+    margin: 40px 113px 42px 112px;
     color: #fff;
     padding: 0;
   }

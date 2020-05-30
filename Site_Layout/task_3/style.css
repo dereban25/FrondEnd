@@ -2,18 +2,13 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-}
-
 body {
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
+  background-color: #141B1C;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
 }
 
 .page {
@@ -59,7 +54,7 @@ body {
   overflow: hidden;
   width: 380px;
   height: 770px;
-  background: #334247;
+  background: #979797;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.087466);
 }
 .price-card__title {
@@ -113,7 +108,7 @@ body {
   line-height: 18px;
 }
 .price-card__option:nth-child(odd) {
-  background: #2A3438;
+  background:#979797;
   mix-blend-mode: normal;
   opacity: 0.5;
 }
@@ -130,7 +125,7 @@ body {
   text-transform: uppercase;
   border: none;
   margin: 39px 113px 40px 112px;
-  color: #fff;
+  color: #FFFFFF;
   padding: 0;
 }
 

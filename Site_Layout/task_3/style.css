@@ -3,6 +3,8 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   background-color: #141B1C;
   display: flex;
   justify-content: center;

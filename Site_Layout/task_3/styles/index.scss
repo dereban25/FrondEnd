@@ -17,7 +17,6 @@ body {
 }
 
 .page {
-  //padding: 0;
   width: 1440px;
   height: 1000px;
   display: flex;
@@ -83,7 +82,7 @@ body {
     font-size: 55px;
     line-height: 67px;
     margin: 33px 0 0;
-    /* identical to box height */
+
     span {
       margin: auto;
     }
@@ -127,8 +126,6 @@ body {
     width: 155px;
     font-weight: normal;
     font-size: 14px;
-    // line-height: 17px;
-    /* identical to box height */
     text-transform: uppercase;
     border: none;
     margin: 40px 113px 42px 112px;
@@ -161,7 +158,6 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   color: #FFFFFF;
   transform: rotate(45deg);
   background: #DC3F45;

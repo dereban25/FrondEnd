@@ -1,0 +1,87 @@
+@import "breakpoints.scss";
+.page-footer {
+  background: #fff;
+  padding-top: 120px;
+}
+
+.footer-container {
+  display: flex;
+  position: relative;
+  background: #FBFBFB;
+  height: 130px;
+  padding: 40px;
+  align-items: center;
+  margin-bottom: 90px;
+  @include for-sm-up {
+    padding: 40px 160px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-logo {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: rgba(25, 104, 252, 0.05);
+  margin-right: 50px;
+  @include for-sm-up {
+    margin-right: 0;
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    color: #1968FC;
+    margin: auto;
+  }
+}
+
+.footer-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 3px;
+  padding: 15px;
+  background: rgba(216, 216, 216, 0.0001);
+}
+
+.facebook {
+  padding: 15px 20px;
+}
+
+.footer-illustration {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  @include for-sm-up {
+    right: 160px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.footer-nav {
+  display: none;
+  @include for-sm-up {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 50px;
+  }
+  &__item {
+    width: 120px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+}

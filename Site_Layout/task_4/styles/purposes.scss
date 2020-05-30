@@ -1,0 +1,59 @@
+@import "breakpoints.scss";
+
+.purposes {
+  margin-top: 120px;
+  padding: 0 60px;
+  @include for-sm-up {
+    padding: 0;
+    margin: 120px 160px 0 160px;
+  }
+
+  &__container {
+    @include for-sm-up {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 58px;
+    }
+  }
+}
+
+.purpose:nth-child(2),
+.purpose:nth-child(4) {
+  @include for-sm-up {
+    margin-right: 0;
+  }
+}
+
+.purpose:nth-child(3),
+.purpose:nth-child(4) {
+  @include for-sm-up {
+    margin-bottom: 0;
+  }
+}
+
+.purpose {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  @include for-sm-up {
+    width: 540px;
+    height: 80px;
+    margin-right: 40px;
+  }
+
+  &__image {
+    width: 80px;
+    height: 80px;
+  }
+
+  &__title {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 20px;
+  }
+}

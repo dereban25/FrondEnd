@@ -1,0 +1,106 @@
+@import "breakpoints.scss";
+.workflow {
+  margin-top: 120px;
+  padding: 0 60px;
+  @include for-sm-up {
+    padding: 0;
+    margin: 120px 160px 0 160px;
+  }
+  &__content {
+    @include for-sm-up {
+      display: flex;
+    }
+  }
+  &__title {
+    margin-bottom: 48px !important;
+    @include for-sm-up {
+      margin-bottom: 38px !important;
+    }
+  }
+  &-step:nth-child(2) {
+    @include for-sm-up {
+      margin-top: 40px;
+    }
+  }
+  &-step:nth-child(3) {
+    @include for-sm-up {
+      margin: 80px 0 0 0;
+    }
+  }
+  &-step:last-child::after {
+    display: none;
+    content: "";
+  }
+  &-step::after {
+    display: block;
+    border-left: 2px dashed #1968FC;
+    width: 1px;
+    height: 40px;
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    @include for-sm-up {
+      width: 70px;
+      height: 0px;
+      border-top: 2px dashed #1968FC;
+      position: absolute;
+      content: "";
+      top: 110px;
+      right: -75px;
+    }
+  }
+  &-step {
+    position: relative;
+    padding: 40px;
+    margin-bottom: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+    @include for-sm-up {
+      width: 320px;
+      height: 220px;
+      margin-right: 80px;
+    }
+    &__content {
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: 40px 36px;
+    }
+    &__num {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 20px;
+      color: #11223F;
+    }
+    &__title {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 40px;
+      color: #1967FA;
+    }
+    &__description {
+      color: #11223F;
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 10px;
+    }
+    &__decor {
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+    }
+  }
+}
+
+.bi1 {
+  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconDownload.png');
+}
+
+.bi2 {
+  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconUpload.png');
+}
+
+.bi3 {
+  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconUseCode.png');
+}

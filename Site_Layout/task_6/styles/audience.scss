@@ -88,12 +88,12 @@
   &__button-light {
     background-color: #fff !important;
     color: #000 !important;
-    //box-shadow: none !important;
+    box-shadow: none !important;
     display: inline-block;
     @include for-sm-up {
       background-color: #fff !important;
       color: #000 !important;
-      box-shadow: none !important;
+      //box-shadow: none !important;
       display: inline-block;
       margin-left: 10px !important;
     }

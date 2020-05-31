@@ -497,7 +497,7 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #FFFFFF !important;
   background-blend-mode: overlay, normal;
   color: black !important;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1) !important;
+  box-shadow: none !important;
   display: inline-block;
   margin-bottom: 0 !important;
 }
@@ -505,7 +505,7 @@
   .audience__button-light {
     background-color: #fff !important;
     color: #000 !important;
-    box-shadow: none;
+    box-shadow: none !important;
     display: inline-block;
     margin-left: 10px !important;
   }
@@ -532,6 +532,7 @@
   font-size: 22px;
   line-height: 28px;
   margin-top: 22px;
+  margin-bottom: 33px;
 }
 
 .user-card {
@@ -557,7 +558,7 @@
   margin-left: 0;
 }
 .user-card__dev {
-  padding: 22px 76px;
+  padding: 22px 76px 0;
 }
 @media screen and (min-width: 400px) {
   .user-card__dev {
@@ -565,7 +566,7 @@
   }
 }
 .user-card__enter {
-  padding: 22px 74px;
+  padding: 22px 74px 0;
 }
 @media screen and (min-width: 400px) {
   .user-card__enter {
@@ -573,7 +574,7 @@
   }
 }
 .user-card__athlete {
-  padding: 22px 65px;
+  padding: 22px 65px 0;
 }
 @media screen and (min-width: 400px) {
   .user-card__athlete {
@@ -581,7 +582,7 @@
   }
 }
 .user-card__creator {
-  padding: 22px 100px 22px 71px;
+  padding: 22px 100px 0 71px;
 }
 @media screen and (min-width: 400px) {
   .user-card__creator {

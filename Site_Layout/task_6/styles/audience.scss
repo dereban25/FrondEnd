@@ -182,19 +182,13 @@
 
 
 
-.user-card__athlete:hover {
+.user-card:hover {
   background: #3141C5;
   box-shadow: 0 11px 55px rgba(0, 0, 0, 0.07), 0 13px 18px rgba(0, 0, 0, 0.15);
   color: white;
 }
-.user-card__enter:hover {
-  background: #3141C5;
+.user-card:hover:first-child {
+  background-color: #fff !important;
   box-shadow: 0 11px 55px rgba(0, 0, 0, 0.07), 0 13px 18px rgba(0, 0, 0, 0.15);
-  color: white;
-}
-
-.user-card__creator:hover {
-  background: #3141C5;
-  box-shadow: 0 11px 55px rgba(0, 0, 0, 0.07), 0 13px 18px rgba(0, 0, 0, 0.15);
-  color: white;
+  color:black;
 }

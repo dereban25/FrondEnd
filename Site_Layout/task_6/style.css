@@ -50,61 +50,37 @@
 }
 @media screen and (min-width: 400px) {
   .order__small-img {
-    margin: 0;
-    margin-top: 73px;
-    margin-bottom: 72px;
-    margin-left: 224px;
+    margin: 73px 0 72px 224px;
   }
 }
 @media screen and (min-width: 400px) {
-  .order_right-side {
+  .order__right-side {
     width: 555px;
-    margin-left: 123px;
-    margin-top: 106px;
+    margin: 106px 229px 105px 122px;
   }
 }
 @media screen and (min-width: 400px) {
-  .order_right-side form {
+  .order__right-side form {
     display: flex;
   }
-}
-.order__title {
-  margin: 0;
-  padding: 0;
-  margin-top: 40px;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 40px;
-  /* or 100% */
-  letter-spacing: -0.357143px;
 }
 @media screen and (min-width: 400px) {
   .order__title {
     margin: 0;
-    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
   }
-}
-.order__text {
-  margin: 0;
-  padding: 0;
-  margin-top: 18px;
-  font-size: 24px;
-  line-height: 34px;
 }
 @media screen and (min-width: 400px) {
   .order__text {
+    margin: 12px 0 0;
     font-size: 22px;
     line-height: 32px;
   }
 }
-@media screen and (min-width: 400px) {
-  .order form {
-    margin-top: 26px;
-    margin-bottom: 10px;
-  }
-}
 .order__button {
-  margin-top: 12px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #3040C4;
   background-blend-mode: overlay, normal;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
@@ -119,6 +95,15 @@
   .order__button {
     margin: 0;
     width: 160px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 13px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 400px) {
+  .order form {
+    margin: 26px 0 10px 0;
   }
 }
 .order__input {
@@ -130,29 +115,27 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 13px;
-  /* identical to box height, or 72% */
   text-align: center;
-  color: #2B292D;
   width: 100%;
-  text-align: center;
 }
 @media screen and (min-width: 400px) {
   .order__input {
-    margin: 0;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
     max-width: 385px;
   }
 }
 .order__add-text {
   font-size: 14px;
   line-height: 22px;
-  /* or 157% */
   color: rgba(43, 41, 45, 0.6);
   margin-top: 10px;
 }
 @media screen and (min-width: 400px) {
   .order__add-text {
-    margin: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
   }
 }
 

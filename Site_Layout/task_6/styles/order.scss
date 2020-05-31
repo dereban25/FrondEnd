@@ -12,17 +12,13 @@
         margin: auto;
         max-width: 100%;
         @include for-sm-up {
-            margin: 0;
-            margin-top: 73px;
-            margin-bottom: 72px;
-            margin-left: 224px;
+            margin: 73px 0 72px 224px;
         }
     }
-    &_right-side {
+    &__right-side {
         @include for-sm-up {
             width: 555px;
-            margin-left: 123px;
-            margin-top: 106px;
+            margin: 106px 229px 105px 122px;
         }
         form {
             @include for-sm-up {
@@ -31,38 +27,24 @@
         }
     }
     &__title {
-        margin: 0;
-        padding: 0;
-        margin-top: 40px;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 40px;
-        /* or 100% */
-        letter-spacing: -0.357143px;
+
         @include for-sm-up {
-            margin: 0;
-            margin-bottom: 12px;
+            margin:0;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -0.25px;
         }
     }
     &__text {
-        margin: 0;
-        padding: 0;
-        margin-top: 18px;
-        font-size: 24px;
-        line-height: 34px;
+
         @include for-sm-up {
+            margin:12px 0 0;
             font-size: 22px;
             line-height: 32px;
         }
     }
-    form {
-        @include for-sm-up {
-            margin-top: 26px;
-            margin-bottom: 10px;
-        }
-    }
     &__button {
-        margin-top: 12px;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
         background-blend-mode: overlay, normal;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
@@ -75,8 +57,18 @@
         @include for-sm-up {
             margin: 0;
             width: 160px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 13px;
+            text-align:center;
         }
     }
+    form {
+        @include for-sm-up {
+            margin: 26px 0 10px 0;
+        }
+    }
+
     &__input {
         margin-top: 40px;
         border: 1px solid rgba(43, 41, 45, 0.2);
@@ -86,25 +78,23 @@
         font-weight: normal;
         font-size: 18px;
         line-height: 13px;
-        /* identical to box height, or 72% */
         text-align: center;
-        color: #2B292D;
         width: 100%;
-        text-align: center;
         @include for-sm-up {
-            margin: 0;
-            margin-right: 10px;
+            margin: 0 10px 0 0;
             max-width: 385px;
         }
     }
     &__add-text {
         font-size: 14px;
         line-height: 22px;
-        /* or 157% */
         color: rgba(43, 41, 45, 0.6);
         margin-top: 10px;
         @include for-sm-up {
-            margin: 0;
+            margin-top:10px;
+            font-size: 14px;
+            line-height: 22px;
+            color: rgba(43, 41, 45, 0.6);
         }
     }
 }

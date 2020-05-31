@@ -493,7 +493,6 @@
 .audience__button-light {
   background-color: #fff !important;
   color: #000 !important;
-  box-shadow: none !important;
   display: inline-block;
 }
 @media screen and (min-width: 400px) {
@@ -584,7 +583,19 @@
   }
 }
 
-.user-card:hover {
+.user-card__athlete:hover {
+  background: #3141C5;
+  box-shadow: 0 11px 55px rgba(0, 0, 0, 0.07), 0 13px 18px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.user-card__enter:hover {
+  background: #3141C5;
+  box-shadow: 0 11px 55px rgba(0, 0, 0, 0.07), 0 13px 18px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.user-card__creator:hover {
   background: #3141C5;
   box-shadow: 0 11px 55px rgba(0, 0, 0, 0.07), 0 13px 18px rgba(0, 0, 0, 0.15);
   color: white;

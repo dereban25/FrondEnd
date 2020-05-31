@@ -475,6 +475,7 @@
 .audience__button-light {
   background-color: #fff !important;
   color: #000 !important;
+  box-shadow: none !important;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 400px) {
@@ -487,14 +488,14 @@
   .audience__cards {
     display: flex;
     justify-content: space-around;
-    margin-top: 111px;
+    margin: 111px 131px 110px 130px;
     flex-grow: 1;
   }
 }
-.audience__card img {
+.audience img {
   max-width: 100%;
 }
-.audience__card-title {
+.audience-title {
   font-weight: bold;
   font-size: 22px;
   line-height: 28px;
@@ -503,7 +504,6 @@
 
 .user-card {
   padding: 22px 20px 33px;
-  margin-bottom: 15px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #FFFFFF;
   background-blend-mode: overlay, normal;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -516,8 +516,11 @@
   .user-card {
     width: 25%;
     min-width: 262px;
-    margin: 0 30px 110px 0;
+    margin-left: 30px;
   }
+}
+.user-card:first-child {
+  margin-left: 0px;
 }
 
 .user-card:hover {

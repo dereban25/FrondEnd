@@ -1,5 +1,6 @@
 @import 'breakpoints.scss';
 
+
 .order {
   padding: 50px 15px;
   background: #F4F5F7;
@@ -7,13 +8,11 @@
     padding: 73px 0 72px 0;
     display: flex;
     justify-content:center;
-    align-items: flex-start;
   }
 
   &__illustration {
     max-width: 200px;
     @include for-sm-up {
-      height:296px;
       max-width:269px;
       margin-right: 121px;
 
@@ -97,7 +96,8 @@
     line-height: 22px;
     color: rgba(43, 41, 45, 0.6);
     @include for-sm-up {
-      margin: 10px 0 0;
+      margin: 10px 0 32px 0;
+
 
     }
 

@@ -16,6 +16,7 @@
     //margin:34px 0 0;
     @include for-sm-up {
       display: flex;
+      flex-direction: row;
       margin: 34px 0 0;
     }
   }
@@ -127,11 +128,23 @@
 .user-card {
   width: 290px;
   height: 300px;
+  margin-bottom: 15px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%),
+  #FFFFFF;
+  background-blend-mode: overlay,
+  normal;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05),
+  0 1px 3px rgba(0, 0, 0, 0.1),
+  inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @include for-sm-up {
     width: 262px;
     height: 300px;
     margin-left: 30px;
-    box-shadow: none;
   }
 
   &:first-child {
@@ -150,35 +163,24 @@
     @include for-sm-up {
       padding: 22px 60px;
     }
+  }
 
-    &__athlete {
-      padding: 22px 65px;
-      @include for-sm-up {
-        padding: 22px 51px;
-      }
+  &__athlete {
+    padding: 22px 65px;
+    @include for-sm-up {
+      padding: 22px 51px;
+    }
+  }
 
-      &__creator {
-        padding: 22px 100px 22px 71px;
-        @include for-sm-up {
-          padding: 22px 72px 22px 71px;
-        }
-
-        margin-bottom: 15px;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%),
-        #FFFFFF;
-        background-blend-mode: overlay,
-        normal;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05),
-        0 1px 3px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+  &__creator {
+    padding: 22px 100px 22px 71px;
+    @include for-sm-up {
+      padding: 22px 72px 22px 71px;
     }
   }
 }
+
+
 
 .user-card:hover {
   background: #3141C5;

@@ -420,6 +420,7 @@
 @media screen and (min-width: 400px) {
   .audience__buttons {
     display: flex;
+    flex-direction: row;
     margin: 34px 0 0;
   }
 }
@@ -531,13 +532,20 @@
 .user-card {
   width: 290px;
   height: 300px;
+  margin-bottom: 15px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #FFFFFF;
+  background-blend-mode: overlay, normal;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 400px) {
   .user-card {
     width: 262px;
     height: 300px;
     margin-left: 30px;
-    box-shadow: none;
   }
 }
 .user-card:first-child {
@@ -559,27 +567,19 @@
     padding: 22px 60px;
   }
 }
-.user-card__enter__athlete {
+.user-card__athlete {
   padding: 22px 65px;
 }
 @media screen and (min-width: 400px) {
-  .user-card__enter__athlete {
+  .user-card__athlete {
     padding: 22px 51px;
   }
 }
-.user-card__enter__athlete__creator {
+.user-card__creator {
   padding: 22px 100px 22px 71px;
-  margin-bottom: 15px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #FFFFFF;
-  background-blend-mode: overlay, normal;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 @media screen and (min-width: 400px) {
-  .user-card__enter__athlete__creator {
+  .user-card__creator {
     padding: 22px 72px 22px 71px;
   }
 }

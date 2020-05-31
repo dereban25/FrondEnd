@@ -1,0 +1,110 @@
+@import "breakpoints.scss";
+.order {
+    @include for-sm-up {
+        flex-direction: row;
+        padding: 0;
+    }
+    background: #F4F5F7;
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    &__small-img {
+        margin: auto;
+        max-width: 100%;
+        @include for-sm-up {
+            margin: 0;
+            margin-top: 73px;
+            margin-bottom: 72px;
+            margin-left: 224px;
+        }
+    }
+    &_right-side {
+        @include for-sm-up {
+            width: 555px;
+            margin-left: 123px;
+            margin-top: 106px;
+        }
+        form {
+            @include for-sm-up {
+                display: flex;
+            }
+        }
+    }
+    &__title {
+        margin: 0;
+        padding: 0;
+        margin-top: 40px;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 40px;
+        /* or 100% */
+        letter-spacing: -0.357143px;
+        @include for-sm-up {
+            margin: 0;
+            margin-bottom: 12px;
+        }
+    }
+    &__text {
+        margin: 0;
+        padding: 0;
+        margin-top: 18px;
+        font-size: 24px;
+        line-height: 34px;
+        @include for-sm-up {
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+    form {
+        @include for-sm-up {
+            margin-top: 26px;
+            margin-bottom: 10px;
+        }
+    }
+    &__button {
+        margin-top: 12px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+        background-blend-mode: overlay, normal;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+        border-radius: 2px;
+        border: none;
+        width: 100%;
+        height: 48px;
+        color: #fff;
+        font-weight: 700;
+        @include for-sm-up {
+            margin: 0;
+            width: 160px;
+        }
+    }
+    &__input {
+        margin-top: 40px;
+        border: 1px solid rgba(43, 41, 45, 0.2);
+        border-radius: 2px;
+        height: 48px;
+        color: #2B292D;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 13px;
+        /* identical to box height, or 72% */
+        text-align: center;
+        color: #2B292D;
+        width: 100%;
+        text-align: center;
+        @include for-sm-up {
+            margin: 0;
+            margin-right: 10px;
+            max-width: 385px;
+        }
+    }
+    &__add-text {
+        font-size: 14px;
+        line-height: 22px;
+        /* or 157% */
+        color: rgba(43, 41, 45, 0.6);
+        margin-top: 10px;
+        @include for-sm-up {
+            margin: 0;
+        }
+    }
+}

@@ -191,4 +191,9 @@
   background-color: #fff !important;
   box-shadow: 0 11px 55px rgba(0, 0, 0, 0.07), 0 13px 18px rgba(0, 0, 0, 0.15);
   color:black;
+  @include for-sm-up {
+    background-color: #fff !important;
+    box-shadow: 0 11px 55px rgba(0, 0, 0, 0.07), 0 13px 18px rgba(0, 0, 0, 0.15);
+    color:black;
+  }
 }

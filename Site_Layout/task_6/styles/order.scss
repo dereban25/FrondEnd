@@ -13,6 +13,7 @@
   &__illustration {
     max-width: 200px;
     @include for-sm-up {
+      height:296px;
       max-width:269px;
       margin-right: 121px;
 

@@ -63,10 +63,26 @@
   letter-spacing: -0.357143px;
   margin-top: 40px;
 }
+@media screen and (min-width: 400px) {
+  .order__title {
+    margin: 33px 0 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+  }
+}
 .order__text {
   font-size: 24px;
   line-height: 34px;
   margin: 18px 0 0;
+}
+@media screen and (min-width: 400px) {
+  .order__text {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 12px;
+  }
 }
 .order__email {
   margin-top: 40px;
@@ -95,7 +111,11 @@
 }
 .order__button {
   margin-top: 12px;
-  width: 100%;
+}
+@media screen and (max-width: 399px) {
+  .order__button {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 400px) {
   .order__button {
@@ -107,6 +127,11 @@
   font-size: 14px;
   line-height: 22px;
   color: rgba(43, 41, 45, 0.6);
+}
+@media screen and (min-width: 400px) {
+  .order__terms {
+    margin: 10px 0 0;
+  }
 }
 
 .hiring {

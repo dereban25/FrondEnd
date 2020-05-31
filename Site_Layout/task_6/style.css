@@ -403,18 +403,17 @@
 }
 
 .audience {
-  padding: 50px 15px;
   background: rgba(0, 161, 198, 0.07);
 }
 @media screen and (min-width: 400px) {
   .audience {
-    padding: 108px 130px 110px 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
 .audience__buttons {
+  display: flex;
   margin: 34px 0 0;
 }
 .audience__subtitle {
@@ -422,12 +421,11 @@
   line-height: 34px;
   text-align: center;
   color: #2B292D;
-  margin: 0;
-  font-weight: bold;
+  margin: 108px 0 0;
+  font-weight: 700;
 }
 .audience__title {
-  margin: 0;
-  margin-top: 17px;
+  margin: 17px 0 0;
   font-weight: bold;
   font-size: 40px;
   line-height: 40px;
@@ -475,14 +473,14 @@
   }
 }
 .audience__button-light {
-  background-color: #fff;
-  color: #000;
+  background-color: #fff !important;
+  color: #000 !important;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 400px) {
   .audience__button-light {
     display: inline-block;
-    margin: 0;
+    margin: 0 0 0 10px !important;
   }
 }
 @media screen and (min-width: 400px) {
@@ -517,8 +515,8 @@
 @media screen and (min-width: 400px) {
   .user-card {
     width: 25%;
-    min-width: 260px;
-    margin: 0 30px 0 0;
+    min-width: 262px;
+    margin: 0 30px 110px 0;
   }
 }
 

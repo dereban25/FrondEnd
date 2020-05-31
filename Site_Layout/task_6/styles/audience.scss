@@ -1,16 +1,14 @@
 @import 'breakpoints.scss';
 .audience {
-    padding: 50px 15px;
     background: rgba(0, 161, 198, 0.07);
-    // mix-blend-mode: normal;
-    // opacity: 0.07;
+
     @include for-sm-up {
-        padding: 108px 130px 110px 130px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     &__buttons{
+        display: flex;
         margin:34px 0 0;
     }
     &__subtitle {
@@ -18,12 +16,11 @@
         line-height: 34px;
         text-align: center;
         color: $text-color-black;
-        margin: 0;
-        font-weight: bold;
+        margin: 108px 0 0;
+        font-weight: 700;
     }
     &__title {
-        margin: 0;
-        margin-top: 17px;
+        margin: 17px 0 0;
         font-weight: bold;
         font-size: 40px;
         line-height: 40px;
@@ -63,14 +60,14 @@
             width: 160px;
             margin-bottom: 0px;
         }
-        &-light {
-            background-color: #fff;
-            color: #000;
-            margin-bottom: 40px;
-            @include for-sm-up {
-                display: inline-block;
-                margin: 0;
-            }
+    }
+    &__button-light {
+        background-color: #fff !important;
+        color: #000 !important;
+        margin-bottom: 40px;
+        @include for-sm-up {
+            display: inline-block;
+            margin: 0 0 0 10px !important;
         }
     }
     &__cards {
@@ -97,8 +94,8 @@
 .user-card {
     @include for-sm-up {
         width: 25%;
-        min-width: 260px;
-        margin: 0 30px 0 0;
+        min-width: 262px;
+        margin: 0 30px 110px 0;
     }
     padding: 22px 20px 33px;
     margin-bottom: 15px;

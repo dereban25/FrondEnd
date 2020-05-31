@@ -3,7 +3,7 @@
 .headline {
     width: 100%;
 
-    @include for-desktop {
+    @include for-sm-up {
         display: flex;
         width: 1140px;
         margin: 84px auto auto;
@@ -15,7 +15,7 @@
     &__content {
         margin: 35px 15px 33px 15px;
 
-        @include for-desktop {
+        @include for-sm-up {
             margin: 0;
             position: absolute;
             z-index: 1;
@@ -29,7 +29,7 @@
         letter-spacing: -0.3125px;
         margin: 0;
 
-        @include for-desktop {
+        @include for-sm-up {
             width: 754px;
             height: 165px;
             font-size: 80px;
@@ -45,7 +45,7 @@
         margin-bottom: 0;
         font-size: 24px;
         line-height: 34px;
-        @include for-desktop {
+        @include for-sm-up {
             width: 456px;
             height: 102px;
             margin-top: 34px;
@@ -55,7 +55,7 @@
     &__action-button {
         margin-top: 30px;
 
-        @include for-desktop {
+        @include for-sm-up {
             margin-top: 58px;
         }
     }
@@ -70,7 +70,7 @@
         border-radius: 2px;
         border: none;
 
-        @include for-desktop {
+        @include for-sm-up {
             background-color: #3040C4;
             margin-right: 10px;
             color: #fff;

@@ -1,100 +1,82 @@
-@import "breakpoints.scss";
+@import 'breakpoints.scss';
+
 .order {
-    @include for-sm-up {
-        flex-direction: row;
-        padding: 0;
-    }
-    background: #F4F5F7;
-    padding: 50px 15px;
+  padding: 50px 15px;
+  background: #F4F5F7;
+  @include for-sm-up {
+    padding: 73px 0 72px 0;
     display: flex;
-    flex-direction: column;
-    &__small-img {
-        margin: auto;
-        max-width: 100%;
-        @include for-sm-up {
-            margin: 73px 0 72px 224px;
-        }
-    }
-    &__right-side {
-        @include for-sm-up {
-            width: 555px;
-            margin: 106px 229px 105px 122px;
-        }
-        form {
-            @include for-sm-up {
-                display: flex;
-            }
-        }
-    }
-    &__title {
+    justify-content:center;
+    align-items: flex-start;
+  }
 
-        @include for-sm-up {
-            margin:0;
-            font-weight: bold;
-            font-size: 40px;
-            line-height: 40px;
-            letter-spacing: -0.25px;
-        }
-    }
-    &__text {
+  &__illustration {
+    max-width: 200px;
+    @include for-sm-up {
+      max-width:269px;
+      margin-right: 121px;
 
-        @include for-sm-up {
-            margin:12px 0 0;
-            font-size: 22px;
-            line-height: 32px;
-        }
     }
-    &__button {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
-        background-blend-mode: overlay, normal;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-        border-radius: 2px;
-        border: none;
-        width: 100%;
-        height: 48px;
-        color: #fff;
-        font-weight: 700;
-        @include for-sm-up {
-            margin: 0;
-            width: 160px;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 13px;
-            text-align:center;
-        }
-    }
-    form {
-        @include for-sm-up {
-            margin: 26px 0 10px 0;
-        }
+  }
+
+  &__details {
+    max-width:555px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    margin-top: 40px;
+
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 18px 0 0;
+
+  }
+
+  &__email {
+    margin-top: 40px;
+    background: #FFFFFF;
+    border: 1px solid #2B292D33;
+    border-radius: 2px;
+    height: 48px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 13px;
+    @include for-sm-up {
+      margin-top: 0;
     }
 
-    &__input {
-        margin-top: 40px;
-        border: 1px solid rgba(43, 41, 45, 0.2);
-        border-radius: 2px;
-        height: 48px;
-        color: #2B292D;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 13px;
-        text-align: center;
-        width: 100%;
-        @include for-sm-up {
-            margin: 0 10px 0 0;
-            max-width: 385px;
-        }
+    &::placeholder {
+      color: #2B292D
     }
-    &__add-text {
-        font-size: 14px;
-        line-height: 22px;
-        color: rgba(43, 41, 45, 0.6);
-        margin-top: 10px;
-        @include for-sm-up {
-            margin-top:10px;
-            font-size: 14px;
-            line-height: 22px;
-            color: rgba(43, 41, 45, 0.6);
-        }
+  }
+  &__form{
+    @include for-sm-up {
+      display: flex;
+      margin-top: 26px;
     }
+  }
+
+  &__button {
+    margin-top: 12px;
+    width: 100%;
+    @include for-sm-up {
+      margin-top: 0;
+      margin-left: 10px;
+    }
+  }
+
+  &__terms {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+
+  }
 }

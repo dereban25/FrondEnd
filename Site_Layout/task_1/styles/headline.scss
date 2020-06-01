@@ -1,122 +1,122 @@
 @import "breakpoints.scss";
 
 .headline {
-  width: 100%;
-
-  @include for-desktop {
-    display: flex;
-    width: 1140px;
-    margin: 84px auto auto;
-    position: relative;
-    padding-bottom: 77px;
-  }
-
-
-  &__content {
-    margin: 35px 15px 33px 15px;
-
-    @include for-desktop {
-      margin: 0;
-      position: absolute;
-      z-index: 1;
-    }
-  }
-
-  &__title {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 50px;
-    letter-spacing: -0.3125px;
-    margin: 0;
-
-    @include for-desktop {
-      width: 754px;
-      height: 165px;
-      font-size: 80px;
-      line-height: 78px;
-      letter-spacing: -0.5px;
-      z-index: 1;
-      margin: 0;
-    }
-  }
-
-  &__description {
-    margin-top: 24px;
-    margin-bottom: 0;
-    font-size: 24px;
-    line-height: 34px;
-    @include for-desktop {
-      width: 456px;
-      height: 102px;
-      margin-top: 34px;
-    }
-  }
-
-  &__action-button {
-    margin-top: 30px;
-
-    @include for-desktop {
-      margin-top: 58px;
-    }
-  }
-
-  &__button_get {
-    background-color: #3040C4;
-    color: #fff;
     width: 100%;
-    height: 48px;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 2px;
-    border: none;
 
-    @include for-desktop {
-      background-color: #3040C4;
-      margin-right: 10px;
-      color: #fff;
-      width: 160px;
-      height: 48px;
-      font-size: 18px;
-      font-weight: 700;
-      border-radius: 2px;
-      border: none;
+    @include for-sm-up {
+        display: flex;
+        width: 1140px;
+        margin: 84px auto auto;
+        position: relative;
+        padding-bottom: 77px;
     }
-  }
 
-  &__button_learn {
-    background-color: #FFFFFF;
-    color: #3040C4;
-    width: 100%;
-    height: 48px;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 2px;
-    border: none;
-    margin-top: 15px;
 
-    @include for-desktop {
-      background-color: #FFFFFF;
-      color: #3040C4;
-      width: 158px;
-      height: 48px;
-      font-size: 18px;
-      font-weight: 700;
-      border-radius: 2px;
-      border: none;
-      margin-top: 0;
+    &__content {
+        margin: 35px 15px 33px 15px;
+
+        @include for-sm-up {
+            margin: 0;
+            position: absolute;
+            z-index: 1;
+        }
     }
-  }
 
-  &__banner {
-    margin-bottom: 36px;
-    width: 100%;
-    @include for-desktop {
-      position: relative;
-      margin-left: auto;
-      width: 796px;
-      height: 448px;
-      right: -105px;
-      top: 0;
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: -0.3125px;
+        margin: 0;
+
+        @include for-sm-up {
+            width: 754px;
+            height: 165px;
+            font-size: 80px;
+            line-height: 78px;
+            letter-spacing: -0.5px;
+            z-index: 1;
+            margin: 0;
+        }
     }
-  }
+
+    &__description {
+        margin-top: 24px;
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: 34px;
+        @include for-sm-up {
+            width: 456px;
+            height: 102px;
+            margin-top: 34px;
+        }
+    }
+
+    &__action-button {
+        margin-top: 30px;
+
+        @include for-sm-up {
+            margin-top: 58px;
+        }
+    }
+
+    &__button_get {
+        background-color: #3040C4;
+        color: #fff;
+        width: 100%;
+        height: 48px;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 2px;
+        border: none;
+
+        @include for-sm-up {
+            background-color: #3040C4;
+            margin-right: 10px;
+            color: #fff;
+            width: 160px;
+            height: 48px;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 2px;
+            border: none;
+        }
+    }
+
+    &__button_learn {
+        background-color: #FFFFFF;
+        color: #3040C4;
+        width: 100%;
+        height: 48px;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 2px;
+        border: none;
+        margin-top: 15px;
+
+        @include for-sm-up {
+            background-color: #FFFFFF;
+            color: #3040C4;
+            width: 158px;
+            height: 48px;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 2px;
+            border: none;
+            margin-top: 0;
+        }
+    }
+
+    &__banner {
+        margin-bottom: 36px;
+        width: 100%;
+        @include for-sm-up {
+            position: relative;
+            margin-left: auto;
+            width: 796px;
+            height: 448px;
+            right: -105px;
+            top: 0;
+        }
+    }
 }

@@ -1,36 +1,32 @@
-@import "breakpoints.scss";
-
+@import './breakpoints.scss';
 .about {
-  width: 100%;
-  padding: 46px 15px;
-  background: #F4F5F7;
-
-  @include for-desktop {
-    display: flex;
-    justify-content: space-between;
-    padding: 77px 130px 76px 130px;
-  }
-
-  &__article:last-child {
-    margin-top: 20px;
-
-    @include for-desktop {
-      width: 555px;
-        margin-top: 0;
+    background: #F4F5F7;
+    padding: 46px 15px;
+    @include for-sm-up {
+        display: flex;
+        padding: 77px 131px 76px 130px;
     }
-  }
+    article {
+        margin-bottom: 20px;
+        @include for-sm-up {
+            margin: 0;
+            margin-right: 29px;
+        }
+    }
+    article:last-child {
+        margin: 0;
+    }
+}
 
-  &__title {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 32px;
-    margin: 0;
-  }
-
-  &__text {
-    font-size: 22px;
-    line-height: 32px;
-    margin-bottom: 0;
-    margin-top: 6px;
-  }
+.article {
+    &__title {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 32px;
+        margin: 0;
+    }
+    &__text {
+        font-size: 22px;
+        line-height: 32px;
+    }
 }

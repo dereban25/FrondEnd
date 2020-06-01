@@ -1,11 +1,19 @@
-@mixin for-mobile{
-  @media screen and (max-width: 399px){
-    @content;
-  }
+$lg: 1400px;
+$sm: 400px;
+@mixin for-large-up {
+    @media screen and (min-width: $lg) {
+        @content;
+    }
 }
 
-@mixin for-desktop{
-  @media screen and (min-width: 400px){
-    @content;
-  }
+@mixin for-sm-up {
+    @media screen and (min-width: 400px) {
+        @content;
+    }
+}
+
+@mixin for-sm-down {
+    @media screen and (max-width: $sm - 1) {
+        @content;
+    }
 }

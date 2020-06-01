@@ -1,31 +1,37 @@
-@import "header.scss", "footer.scss", "headline.scss", "about.scss", "customers.scss", "features.scss", "breakpoints.scss","tips.scss","communicate.scss","inbox.scss","audience.scss";
-
+@import 'breakpoints.scss';
+@import 'variables.scss';
+@import 'about.scss';
+@import 'order.scss';
+@import 'hiring.scss';
+@import 'feedback.scss';
+@import 'audience.scss';
+@import 'communicate.scss';
+@import 'inbox.scss';
+@import 'about.scss';
+@import 'customers.scss';
+@import 'tips.scss';
+@import 'features.scss';
+@import 'footer.scss';
+@import 'header.scss';
+@import 'headline.scss';
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: 'Work Sans', serif;
-  font-size: 16px;
-  color: #2B292D;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    color: $text-color-black;
 }
 
 .page {
-  width: 100%;
-  overflow: hidden;
-  @include for-desktop {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 1400px;
-    min-height: 100vh;
-  }
-
-  &__top {
-    background-color: #F3C6BD;
-    @include for-desktop {
-      background-color: #F3C6BD;
-      padding-top: 39px;
+    width: 100%;
+    overflow-x: hidden;
+    @include for-sm-up {
+        width: 1400px;
+        margin: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
-  }
 }

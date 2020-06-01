@@ -383,108 +383,211 @@
   }
 }
 
-.headline__button {
-  background-color: #3141C5;
-  border-radius: 2px;
-  color: #FFFFFF;
-  border: none;
-  width: 160px;
-  height: 48px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 13px;
-}
-.headline__button_white {
-  background-color: #FFFFFF;
-  color: #000000;
-  border: none;
-  width: 160px;
-  height: 48px;
-  border-radius: 2px;
-  margin-left: 10px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 13px;
-}
-
 .audience {
-  width: 1400px;
-  margin: auto;
-  background-color: rgba(0, 161, 198, 0.07);
+  padding: 50px 15px 35px 15px;
+  background: rgba(0, 161, 198, 0.07);
+}
+@media screen and (min-width: 400px) {
+  .audience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.audience__buttons {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 400px) {
+  .audience__buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 34px 0 0;
+  }
+}
+.audience__subtitle {
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  color: #2B292D;
+  margin: 0;
+  font-weight: 700;
+}
+@media screen and (min-width: 400px) {
+  .audience__subtitle {
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    color: #2B292D;
+    margin: 58px 0 0;
+    font-weight: 700;
+  }
+}
+.audience__title {
+  margin: 17px 0 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #2B292D;
+  letter-spacing: -0.357143px;
+}
+@media screen and (min-width: 400px) {
+  .audience__title {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    margin: 24px 0 0;
+    max-width: 555px;
+    font-weight: bold;
+  }
+}
+.audience__text {
+  margin-top: 18px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  /* or 142% */
+  text-align: center;
+  color: #2B292D;
+}
+@media screen and (min-width: 400px) {
+  .audience__text {
+    margin-top: 30px;
+    margin-bottom: 0;
+    max-width: 555px;
+  }
 }
 .audience__button {
-  display: flex;
-  margin-top: 34px;
-  margin-bottom: 133px;
-  justify-content: center;
+  width: 100%;
+  margin-bottom: 12px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #3040C4;
+  background-blend-mode: overlay, normal;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
-.audience__link {
+@media screen and (min-width: 400px) {
+  .audience__button {
+    margin-top: 34px;
+    display: inline-block;
+    width: 160px;
+    margin-bottom: 0;
+  }
+}
+.audience__button-light {
+  background-color: #fff !important;
+  color: #000 !important;
+  box-shadow: none !important;
+  display: inline-block;
+  display: inline-block;
+  margin-bottom: 0 !important;
+}
+@media screen and (min-width: 400px) {
+  .audience__button-light {
+    background-color: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    display: inline-block;
+    margin-left: 10px !important;
+  }
+}
+.audience__cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+@media screen and (min-width: 400px) {
+  .audience__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 111px 131px 110px 130px;
+    flex-grow: 1;
+  }
+}
+.audience img {
+  max-width: 100%;
+}
+.audience__card-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  margin-top: 22px;
+  margin-bottom: 33px;
+}
+
+.user-card {
+  width: 290px;
+  height: 300px;
+  margin-bottom: 15px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #FFFFFF;
+  background-blend-mode: overlay, normal;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.audience__link_subtitle {
-  margin: 0;
-  margin-top: 108px;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 34px;
-  color: #2B292D;
+@media screen and (min-width: 400px) {
+  .user-card {
+    width: 262px;
+    height: 300px;
+    margin-left: 30px;
+  }
 }
-.audience__link_titel {
-  margin: 0;
-  margin-top: 24px;
-  width: 555px;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 56px;
-  letter-spacing: -0.5px;
-  text-align: center;
-  color: #2B292D;
+.user-card:first-child {
+  margin-left: 0;
 }
-.audience__link_text {
-  margin: 0;
-  margin-top: 30px;
-  font-size: 24px;
-  line-height: 34px;
-  text-align: center;
-  color: #2B292D;
-  width: 555px;
+.user-card__dev {
+  padding: 22px 76px 0;
 }
-.audience__line {
-  width: 1139px;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  padding-bottom: 110px;
+@media screen and (min-width: 400px) {
+  .user-card__dev {
+    padding: 22px 62px 0;
+  }
 }
-.audience__line_item {
-  margin: 0;
-  width: 262px;
-  height: 300px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #FFFFFF;
-  background-blend-mode: overlay, normal;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+.user-card__enter {
+  padding: 22px 74px 0;
 }
-.audience__line_item-img {
-  padding-top: 22px;
-  display: flex;
-  margin: auto;
+@media screen and (min-width: 400px) {
+  .user-card__enter {
+    padding: 22px 60px;
+  }
 }
-.audience__line_item-text {
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28px;
-  text-align: center;
-  color: #2B292D;
+.user-card__athlete {
+  padding: 22px 65px 0;
 }
-.audience__line_item:hover > .audience__line_item-text {
-  color: #FFFFFF;
+@media screen and (min-width: 400px) {
+  .user-card__athlete {
+    padding: 22px 51px;
+  }
 }
-.audience__line_item:hover {
+.user-card__creator {
+  padding: 22px 100px 0 71px;
+}
+@media screen and (min-width: 400px) {
+  .user-card__creator {
+    padding: 22px 72px 22px 71px;
+  }
+}
+
+.user-card:hover {
   background: #3141C5;
-  color: #FFFFFF;
+  box-shadow: 0 11px 55px rgba(0, 0, 0, 0.07), 0 13px 18px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.user-card:hover:first-child {
+  background-color: #fff !important;
+  box-shadow: 0 11px 55px rgba(0, 0, 0, 0.07), 0 13px 18px rgba(0, 0, 0, 0.15);
+  color: black;
+}
+@media screen and (min-width: 400px) {
+  .user-card:hover:first-child {
+    background-color: #fff !important;
+    box-shadow: none;
+    color: black;
+  }
 }
 
 .communication {

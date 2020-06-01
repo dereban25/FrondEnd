@@ -489,13 +489,13 @@
     margin-left: 10px !important;
   }
 }
-.audience .audience__line {
+.audience .user-card {
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
 }
 @media screen and (min-width: 400px) {
-  .audience .audience__line {
+  .audience .user-card {
     width: 1139px;
     display: flex;
     flex-direction: row;
@@ -504,7 +504,7 @@
     padding-bottom: 110px;
   }
 }
-.audience .audience__line_item {
+.audience .user-card_item {
   margin: 15px 0 0 0;
   width: 290px;
   height: 300px;
@@ -514,7 +514,7 @@
   border-radius: 8px;
 }
 @media screen and (min-width: 400px) {
-  .audience .audience__line_item {
+  .audience .user-card_item {
     margin: 0;
     width: 262px;
     height: 300px;
@@ -524,28 +524,28 @@
     border-radius: 8px;
   }
 }
-.audience .audience__line_item-img {
+.audience .user-card_item-img {
   padding-top: 22px;
   display: flex;
   margin: auto;
 }
-.audience .audience__line_item-text {
+.audience .user-card_item-text {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   text-align: center;
   color: #2B292D;
 }
-.audience .audience__line_item:hover > .audience .audience__line_item-text {
+.audience .user-card_item:hover > .audience .user-card_item-text {
   color: #FFFFFF;
 }
-.audience .audience__line_item:hover {
+.audience .user-card_item:hover {
   background: #3141C5;
   color: #FFFFFF;
   box-shadow: 0 11px 55px rgba(0, 0, 0, 0.07), 0 13px 18px rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 400px) {
-  .audience .audience__line_item:hover {
+  .audience .user-card_item:hover {
     background: #3141C5;
     color: #FFFFFF;
     box-shadow: 0 11px 55px rgba(0, 0, 0, 0.07), 0 13px 18px rgba(0, 0, 0, 0.15);

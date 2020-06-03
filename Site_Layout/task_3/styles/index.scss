@@ -1,4 +1,15 @@
-@import 'breakpoints.scss','page-header.scss','headline.scss','reviews.scss','visit.scss','workflow.scss','features.scss','users.scss','purposes.scss','consultation.scss','stories.scss','footer.scss';
+@import 'breakpoints.scss';
+@import 'page-header.scss';
+@import 'headline.scss';
+@import 'reviews.scss';
+@import 'workflow';
+@import 'features.scss';
+@import 'users.scss';
+@import 'purposes.scss';
+@import 'consultation.scss';
+@import 'stories.scss';
+@import 'footer.scss';
+@import 'visit.scss';
 * {
   box-sizing: border-box;
 }
@@ -11,6 +22,7 @@ html {
   display: flex;
   flex-direction: column;
   margin: auto;
+  // width: 80vw;
   background: linear-gradient(180deg, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23.07%, rgba(25, 104, 252, 0.0001) 99.94%, rgba(25, 104, 252, 0.05) 100%);
   @include for-sm-up {
     width: 1440px;

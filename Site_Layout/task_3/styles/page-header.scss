@@ -1,5 +1,4 @@
 @import "breakpoints.scss";
-
 .logo {
   display: flex;
   align-items: center;
@@ -15,20 +14,17 @@
     height: 50px;
     max-width: 1120px;
   }
-
   &__logo {
     width: 50px;
     height: 50px;
     margin-right: 10px;
   }
-
   &__title {
-    font-weight: 600;
+    // font-weight: 600;
     font-size: 20px;
     line-height: 30px;
     color: #1968FC;
   }
-
   &__navigation {
     display: none;
     @include for-sm-up {
@@ -38,10 +34,9 @@
       margin-right: 20px;
       height: 50px;
     }
-
     &-item {
       @include for-sm-up {
-        font-weight: 600;
+        // font-weight: 600;
         font-size: 14px;
         line-height: 20px;
         width: 120px;
@@ -51,14 +46,12 @@
         height: 50px;
       }
     }
-
     &-item:last-child {
       @include for-sm-up {
         width: 180px;
       }
     }
   }
-
   &__upload-btn {
     display: none;
     @include for-sm-up {
@@ -71,7 +64,6 @@
       font-weight: bold;
       font-size: 14px;
       line-height: 20px;
-      /* or 143% */
       display: flex;
       align-items: center;
       text-align: center;

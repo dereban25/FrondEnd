@@ -10,15 +10,14 @@
     max-width: 480px;
     @include for-sm-up {
       margin: 0;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 40px;
       line-height: 60px;
     }
     margin: 80px 80px 0 80px;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 40px;
     line-height: 60px;
-    /* or 150% */
     letter-spacing: 1px;
     color: #11223F;
   }
@@ -28,7 +27,6 @@
     font-size: 20px;
     line-height: 40px;
     max-width: 480px;
-    /* or 200% */
     display: flex;
     align-items: center;
     color: #11223F;
@@ -49,7 +47,6 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 20px;
-    /* or 143% */
     display: flex;
     align-items: center;
     justify-content: center;

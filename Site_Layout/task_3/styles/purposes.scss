@@ -1,5 +1,4 @@
 @import "breakpoints.scss";
-
 .purposes {
   margin-top: 120px;
   padding: 0 60px;
@@ -7,7 +6,6 @@
     padding: 0;
     margin: 120px 160px 0 160px;
   }
-
   &__container {
     @include for-sm-up {
       display: flex;
@@ -37,18 +35,16 @@
   margin-bottom: 40px;
   width: 100%;
   background: #FFFFFF;
-  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
+  box-shadow: 0 20px 60px rgba(49, 69, 244, 0.1);
   @include for-sm-up {
     width: 540px;
     height: 80px;
     margin-right: 40px;
   }
-
   &__image {
     width: 80px;
     height: 80px;
   }
-
   &__title {
     color: #000000;
     font-weight: 600;

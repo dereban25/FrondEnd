@@ -1,6 +1,5 @@
-$sm: 1024px;
 @mixin for-sm-up {
-  @media screen and (min-width: $sm) {
+  @media screen and (min-width: 1024px) {
     @content
   }
 }

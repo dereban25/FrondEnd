@@ -7,6 +7,9 @@
     margin: 120px 160px 0 160px;
   }
   &__container {
+    display: flex;
+    margin-top:38px;
+    flex-wrap: wrap;
     @include for-sm-up {
       display: flex;
       flex-wrap: wrap;

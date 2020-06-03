@@ -527,6 +527,11 @@
     margin: 120px 160px 0 160px;
   }
 }
+.purposes__container {
+  display: flex;
+  margin-top: 38px;
+  flex-wrap: wrap;
+}
 @media screen and (min-width: 1024px) {
   .purposes__container {
     display: flex;

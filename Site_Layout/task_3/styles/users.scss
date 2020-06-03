@@ -1,4 +1,84 @@
 @import "breakpoints.scss";
+//.users {
+//  margin-top: 125px;
+//  @include for-sm-up {
+//    margin: 120px 160px 0 160px;
+//  }
+//  &__title {
+//    margin: 0 60px;
+//    @include for-sm-up {
+//      margin: 0;
+//    }
+//  }
+//  &__container {
+//    padding: 0 60px;
+//    display: flex;
+//    flex-wrap: wrap;
+//    justify-content: space-around;
+//    margin-top: 28px;
+//    @include for-sm-up {
+//      margin-top: 50px;
+//      padding: 0;
+//    }
+//  }
+//}
+//.user:nth-child(1),
+//.user:nth-child(3),
+//.user:nth-child(5) {
+//    margin-right: 20px;
+//  }
+//.user:nth-child(1),
+//.user:nth-child(4) {
+//  @include for-sm-up {
+//    margin-left: 40px;
+//  }
+//}
+//.user:nth-child(3),
+//.user:nth-child(6) {
+//  @include for-sm-up {
+//    margin-right: 0;
+//  }
+//}
+//
+//.user:nth-child(4),
+//.user:nth-child(5),
+//.user:nth-child(6) {
+//  @include for-sm-up {
+//    margin-bottom: 0;
+//  }
+//}
+//
+//.user {
+//  flex: 0 1 240px;
+//  background: #FFFFFF;
+//  box-shadow: 0 20px 60px rgba(49, 69, 244, 0.1);
+//  width: 250px;
+//  height: 190px;
+//  padding: 20px;
+//  margin-bottom: 20px;
+//  margin-right: 20px;
+//  @include for-sm-up {
+//    flex:0 1 340px;
+//    width: 360px;
+//    height: 160px;
+//  }
+//  &__title {
+//    text-transform: uppercase;
+//    font-weight: bold;
+//    font-size: 20px;
+//    line-height: 40px;
+//    color: #1967FA;
+//    margin: 0;
+//  }
+//  &__text {
+//    font-weight: normal;
+//    font-size: 16px;
+//    line-height: 30px;
+//    /* or 187% */
+//    color: #11223F;
+//    margin: 20px auto auto;
+//  }
+//}
 .users {
   margin-top: 125px;
   @include for-sm-up {
@@ -22,17 +102,7 @@
     }
   }
 }
-.user:nth-child(1),
-.user:nth-child(3),
-.user:nth-child(5) {
-    margin-right: 20px;
-  }
-.user:nth-child(1),
-.user:nth-child(4) {
-  @include for-sm-up {
-    margin-left: 40px;
-  }
-}
+
 .user:nth-child(3),
 .user:nth-child(6) {
   @include for-sm-up {
@@ -43,22 +113,20 @@
 .user:nth-child(4),
 .user:nth-child(5),
 .user:nth-child(6) {
-  @include for-sm-up {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0;
 }
 
 .user {
   flex: 0 1 240px;
   background: #FFFFFF;
-  box-shadow: 0 20px 60px rgba(49, 69, 244, 0.1);
+  box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
   width: 250px;
   height: 190px;
   padding: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
   @include for-sm-up {
-    flex:0 1 340px;
+    flex:1 1 360px;
     width: 360px;
     height: 160px;
   }
@@ -71,11 +139,12 @@
     margin: 0;
   }
   &__text {
+    margin-top: 20px;
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
     /* or 187% */
     color: #11223F;
-    margin: 20px auto auto;
+    margin: auto;
   }
 }

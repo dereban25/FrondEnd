@@ -475,6 +475,28 @@
   margin-right: 20px;
 }
 
+@media screen and (min-width: 1024px) {
+  .user:nth-child(1),
+.user:nth-child(4) {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .user:nth-child(3),
+.user:nth-child(6) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .user:nth-child(4),
+.user:nth-child(5),
+.user:nth-child(6) {
+    margin-bottom: 0;
+  }
+}
+
 .user {
   flex: 0 1 240px;
   background: #FFFFFF;
@@ -487,7 +509,7 @@
 }
 @media screen and (min-width: 1024px) {
   .user {
-    flex: 0 1 350px;
+    flex: 0 1 340px;
     width: 360px;
     height: 160px;
   }

@@ -27,8 +27,13 @@
 .user:nth-child(5) {
     margin-right: 20px;
   }
+//.user:nth-child(3),
+//.user:nth-child(6) {
+//  @include for-sm-up {
+//    margin-right: 0;
+//  }
+//}
 
-//
 //.user:nth-child(4),
 //.user:nth-child(5),
 //.user:nth-child(6) {
@@ -43,8 +48,9 @@
   height: 190px;
   padding: 20px;
   margin-bottom: 20px;
-  //margin-right: 20px;
+  margin-right: 20px;
   @include for-sm-up {
+    flex:0 1 350px;
     width: 360px;
     height: 160px;
   }

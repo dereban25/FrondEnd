@@ -483,9 +483,11 @@
   height: 190px;
   padding: 20px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 @media screen and (min-width: 1024px) {
   .user {
+    flex: 0 1 350px;
     width: 360px;
     height: 160px;
   }

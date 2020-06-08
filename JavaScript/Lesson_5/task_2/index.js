@@ -1,5 +1,3 @@
-function sayHI(msg) {
-	console.log("Hi,", msg);
+function sayHi(msg) {
+	console.log("Hi," + msg);
 }
-
-sayHI('Tom')

@@ -1,5 +1,6 @@
-@mixin for-sm-up {
-  @media screen and (min-width: 1024px) {
+$lg:1150px;
+@mixin for-large-up {
+  @media screen and (min-width: $lg) {
     @content
   }
 }

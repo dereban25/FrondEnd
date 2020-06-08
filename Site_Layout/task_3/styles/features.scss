@@ -1,87 +1,60 @@
 @import "breakpoints.scss";
 .features {
-  padding: 0 60px;
-  margin-top: 125px;
-  @include for-sm-up {
-    margin: 120px 160px 0 160px;
-    padding: 0;
-  }
-  &__list {
+  margin-top: 120px;
+}
+
+.feature__list {
+  margin-top: 40px;
+  @include for-large-up {
+    display: flex;
+    justify-content: space-between;
     margin-top: 48px;
-    @include for-sm-up {
-      display: flex;
-    }
-  }
-}
-
-.feature:last-child {
-  margin-bottom: 0;
-  @include for-sm-up {
-    margin-right: 0;
-  }
-}
-
-.feature:nth-child(2) {
-  @include for-sm-up {
-    margin-top: 40px;
-  }
-}
-
-.feature:nth-child(3) {
-  @include for-sm-up {
-    margin-top: 80px;
   }
 }
 
 .feature {
-  margin-bottom: 60px;
-  @include for-sm-up {
-    margin: 0 80px 0 0;
+  position: relative;
+  margin-top: 48px;
+  @include for-large-up {
     width: 320px;
     height: 290px;
+    margin-top: 0;
   }
-  &-upper {
-    display: flex;
-    background: #fff;
+}
+
+.feature__second {
+  @include for-large-up {
+    margin-top: 88px;
   }
-  &-image {
-    width: 80px;
-    height: 80px;
-    @include for-sm-up {
-      min-width: 120px;
-      min-height: 120px;
-    }
+}
+
+.feature__third {
+  @include for-large-up {
+    margin-top: 128px;
   }
-  &-title {
-    margin: 20px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 40px;
-    @include for-sm-up {
-      font-size: 20px;
-      line-height: 30px;
-      display: flex;
-      align-items: center;
-    }
+}
+
+.feature__info {
+  display: flex;
+  align-items: center;
+  background-color: #F3F7FF;
+}
+
+.feature__img {
+  width: 120px;
+  height: 120px;
+}
+
+.feature__title {
+  padding: 20px;
+  @include for-large-up {
+    width: 160px;
   }
-  &-lower {
-    position: relative;
-    background: #FFFFFF;
-    box-shadow: 0 20px 60px rgba(49, 69, 244, 0.1);
-    padding: 30px 40px;
-    @include for-sm-up {
-      padding: 40px;
-    }
-    &__text {
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 30px;
-      margin: 0;
-    }
-    &__decor {
-      position: absolute;
-      bottom: -5px;
-      right: -5px;
-    }
-  }
+}
+
+.feature__text {
+  padding: 40px;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 30px;
 }

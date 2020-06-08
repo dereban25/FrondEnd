@@ -1,23 +1,18 @@
 @import "breakpoints.scss";
-.visit {
-  @include for-sm-up {
+.upload {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png);
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
+  @include for-large-up {
     display: none;
   }
-  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  &__text {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 40px;
-    /* or 200% */
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    display: flex;
-    margin: 60px 30px;
-    align-items: center;
-  }
+}
+
+.upload__title {
+  width: 520px;
+  text-align: center;
+  color: #fff;
 }

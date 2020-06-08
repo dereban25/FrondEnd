@@ -1,72 +1,72 @@
 @import "breakpoints.scss";
 .headline {
-  @include for-sm-up {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    margin: 150px 160px 0 160px;
+  position: relative;
+  margin-top: 80px;
+  @include for-large-up {
+    margin-top: 150px;
   }
-  &__title {
-    max-width: 480px;
-    @include for-sm-up {
-      margin: 0;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 60px;
-    }
-    margin: 80px 80px 0 80px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
-    letter-spacing: 1px;
-    color: #11223F;
+}
+
+.headline-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  @include for-large-up {
+    margin: 0;
   }
-  &__description {
-    margin: 20px 80px 0 80px;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 40px;
-    max-width: 480px;
-    display: flex;
-    align-items: center;
-    color: #11223F;
-    @include for-sm-up {
-      margin: 20px 0 0;
-      max-width: 600px;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 40px;
-    }
+}
+
+.headline__title {
+  width: 480px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  @include for-large-up {
+    width: 600px;
   }
-  &__upload-btn {
-    margin: 40px 0 80px 80px;
-    background: #1968FC;
-    box-shadow: 0 10px 40px rgba(25, 104, 252, 0.3);
-    width: 300px;
-    height: 50px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-shadow: 0 10px 40px rgba(25, 104, 252, 0.2);
-    border: none;
-    @include for-sm-up {
-      margin: 40px 0 0;
-    }
+}
+
+.headline__description {
+  font-size: 20px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: #11223F;
+  margin-top: 20px;
+  width: 480px;
+  @include for-large-up {
+    width: 600px;
   }
-  &__image {
+}
+
+.headline__upload-btn {
+  width: 300px;
+  margin-top: 40px;
+  display: none;
+  @include for-large-up {
     display: block;
-    margin: auto;
-    max-width: 100%;
-    @include for-sm-up {
-      position: absolute;
-      right: 0;
-      top: 50px;
-    }
+  }
+}
+
+.headline__upload-btn_sm {
+  display: block;
+  @include for-large-up {
+    display: none;
+  }
+}
+
+.headline__img {
+  width: 100%;
+}
+
+.img-block {
+  margin: 80px 20px 0 20px;
+  @include for-large-up {
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    right: 0;
   }
 }

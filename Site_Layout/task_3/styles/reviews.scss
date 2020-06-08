@@ -1,63 +1,67 @@
 @import "breakpoints.scss";
 .reviews {
-  @include for-sm-up {
-    display: flex;
-    margin: 160px 160px 0 160px;
-    padding: 0;
+  @include for-large-up {
+    margin-top: 160px;
   }
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
-.review:first-child {
-  margin-left: 0;
+.reviews__box {
+  display: flex;
+  flex-direction: column;
+  @include for-large-up {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .review {
-  margin: 50px 0 0;
-  background-color: #fff;
-  box-shadow: 0 20px 60px rgba(49, 69, 244, 0.1);
-  width: 540px;
-  height: 280px;
   padding: 40px;
-  @include for-sm-up {
-    margin: 0 0 0 40px;
+  margin-top: 50px;
+  background-color: #fff;
+  @include for-large-up {
+    width: 540px;
+    height: 280px;
+    margin-top: 0;
   }
-  &__upper {
-    display: flex;
-    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IllustrationQuote.png');
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 60px 46px;
-  }
-  &__avatar {
-    width: 100px;
-    height: 100px;
-  }
-  &__title {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  &__name {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 30px;
-    margin: 0;
-  }
-  &__job {
-    // color: #1967FA;
-    mix-blend-mode: normal;
-    opacity: 0.8;
-    margin: 0;
-  }
-  &__comment {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 30px;
-    /* or 187% */
-    margin: 40px 0 0;
-    color: #11223F;
-  }
+}
+
+.review__info {
+  display: flex;
+}
+
+.review__description {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.review__name {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  color: #11223F;
+}
+
+.review__status {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  align-items: center;
+  color: #1967FA;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.quote {
+  height: 46px;
+  width: 60px;
+  margin-left: auto;
+}
+
+.review__text {
+  font-size: 16px;
+  line-height: 30px;
+  color: #11223F;
+  margin-top: 40px;
 }

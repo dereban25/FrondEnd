@@ -1,106 +1,81 @@
 @import "breakpoints.scss";
-.workflow {
-  margin-top: 120px;
-  padding: 0 60px;
-  @include for-sm-up {
-    padding: 0;
-    margin: 120px 160px 0 160px;
-  }
-  &__content {
-    @include for-sm-up {
-      display: flex;
-    }
-  }
-  &__title {
-    margin-bottom: 48px !important;
-    @include for-sm-up {
-      margin-bottom: 38px !important;
-    }
-  }
-  &-step:nth-child(2) {
-    @include for-sm-up {
-      margin-top: 40px;
-    }
-  }
-  &-step:nth-child(3) {
-    @include for-sm-up {
-      margin: 80px 0 0 0;
-    }
-  }
-  &-step:last-child::after {
-    display: none;
-    content: "";
-  }
-  &-step::after {
-    display: block;
-    border-left: 2px dashed #1968FC;
-    width: 1px;
-    height: 40px;
-    content: "";
-    position: absolute;
-    bottom: -40px;
-    @include for-sm-up {
-      width: 70px;
-      height: 0px;
-      border-top: 2px dashed #1968FC;
-      position: absolute;
-      content: "";
-      top: 110px;
-      right: -75px;
-    }
-  }
-  &-step {
-    position: relative;
-    padding: 40px;
-    margin-bottom: 40px;
-    background: #FFFFFF;
-    box-shadow: 0px 20px 60px rgba(49, 69, 244, 0.1);
-    @include for-sm-up {
-      width: 320px;
-      height: 220px;
-      margin-right: 80px;
-    }
-    &__content {
-      background-position: top right;
-      background-repeat: no-repeat;
-      background-size: 40px 36px;
-    }
-    &__num {
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 20px;
-      color: #11223F;
-    }
-    &__title {
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 40px;
-      color: #1967FA;
-    }
-    &__description {
-      color: #11223F;
-      font-size: 16px;
-      line-height: 30px;
-      margin-top: 10px;
-    }
-    &__decor {
-      position: absolute;
-      bottom: -5px;
-      right: -5px;
-    }
+.wokflow {
+  padding-top: 120px;
+}
+
+.wokflow-box {
+  position: relative;
+  margin-top: 48px;
+  @include for-large-up {
+    margin-top: 38px;
+    display: flex;
   }
 }
 
-.bi1 {
-  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconDownload.png');
+.workflow-step {
+  padding: 40px;
+  background-color: #fff;
+  position: relative;
+  height: 220px;
 }
 
-.bi2 {
-  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconUpload.png');
+.workflow-step__second {
+  @include for-large-up {
+    margin-top: 40px;
+  }
 }
 
-.bi3 {
-  background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/IconUseCode.png');
+.workflow-step__third {
+  @include for-large-up {
+    margin-top: 80px;
+  }
+}
+
+.boredr-line {
+  display: block;
+  border-right: 2px dashed #1968FC;
+  height: 40px;
+  width: 60px;
+  @include for-large-up {
+    border-right: none;
+    border-bottom: 2px dashed #1968FC;
+  }
+}
+
+.boredr-line__first {
+  @include for-large-up {
+    height: 105px;
+  }
+}
+
+.boredr-line__second {
+  @include for-large-up {
+    height: 145px;
+  }
+}
+
+.workflow-step__top-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.workflow-step__number {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.workflow-step__title {
+  color: #1967FA;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.workflow-step__img {
+  height: 36px;
+  width: 40px;
+}
+
+.workflow-step__text {
+  margin-top: 20px;
 }

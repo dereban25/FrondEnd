@@ -1,1 +1,1 @@
-const square = (num)=> num * num;
+const square = (num) => num * num;

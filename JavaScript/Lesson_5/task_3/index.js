@@ -1,8 +1,8 @@
 function getEvenOdd(a){
 	if (a%2 === 0){
-		console.log("even");
+		return "even";
 	}else{
-		console.log("odd");
+		return "odd";
 	}
 }
 

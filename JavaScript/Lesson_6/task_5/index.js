@@ -1,5 +1,3 @@
-function sum(a,b){
-	console.log(a +b);
-	return a + b;
-}
-// sum(5,2); 
+function createEmptyArray(len) {
+	return Array(len);
+};

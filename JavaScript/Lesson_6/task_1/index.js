@@ -1,5 +1,9 @@
-function sum(a,b){
-	console.log(a +b);
-	return a + b;
+function getArrayBounds(arr){
+	if(!Array.isArray(arr)){
+		return null;
+	}
+	console.log([arr.length,arr[0],arr[arr.length-1]]);
+
 }
-// sum(5,2);
+
+// getArrayBounds([10,25,24,5]);

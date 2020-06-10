@@ -2,7 +2,7 @@ function getArrayBounds(arr){
 	if(!Array.isArray(arr)){
 		return null;
 	}
-	console.log([arr.length,arr[0],arr[arr.length-1]]);
+	return [arr.length,arr[0],arr[arr.length-1]];
 
 }
 

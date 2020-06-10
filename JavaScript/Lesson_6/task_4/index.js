@@ -1,5 +1,6 @@
-function sum(a,b){
-	console.log(a +b);
-	return a + b;
+function swap(arr) {
+	const [first, ...spread] = arr;
+	
+	return [...spread, first];
 }
-// sum(5,2); 
+

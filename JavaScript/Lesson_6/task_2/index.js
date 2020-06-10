@@ -1,6 +1,7 @@
-let sumOfNumbers = 0;
 
 function getSum(arr) {
+	let sumOfNumbers = 0;
+	
 	if (!Array.isArray(arr)) {
 		return null;
 	}

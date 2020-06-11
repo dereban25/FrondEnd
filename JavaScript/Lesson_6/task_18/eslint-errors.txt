@@ -1,4 +1,4 @@
-eslint no-unused-vars
+no-unused-vars
 one-var
 prefer-const
 eqeqeq

@@ -1,5 +1,10 @@
-function sum(a,b){
-	console.log(a +b);
-	return a + b;
+function includes(arr,n) {
+	for (let i = 0; i < arr.length;i++){
+		if (arr[i]===n){
+			return true;
+		}
+	}
+	return false;
 }
-// sum(5,2); 
+
+// console.log(includes([10,20,30],10));

@@ -1,10 +1,5 @@
 no-unused-vars
 one-var
-consistent-return
+prefer-const
 eqeqeq
 no-undef
-https://eslint.org/docs/rules/no-unused-vars
-https://eslint.org/docs/rules/no-var
-https://eslint.org/docs/rules/eqeqeq
-https://eslint.org/docs/rules/no-undef
-https://eslint.org/docs/rules/consistent-return

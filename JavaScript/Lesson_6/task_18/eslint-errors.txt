@@ -1,5 +1,6 @@
 no-unused-vars
 one-var
-prefer-const
+no-var
+consistent-return
 eqeqeq
 no-undef

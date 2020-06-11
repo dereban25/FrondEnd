@@ -1,5 +1,12 @@
-function sum(a,b){
-	console.log(a +b);
-	return a + b;
+function reverseArray(arr) {
+	if (!Array.isArray(arr)) {
+		return null;
+	}
+	let arrReverse = [];
+	for (let i = 0; i < arr.length; i++) {
+		arrReverse.unshift(arr[i]);
+	}
+	return arrReverse;
 }
-// sum(5,2); 
+
+// console.log(reverseArray([10, 20, 30]));

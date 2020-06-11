@@ -1,6 +1,6 @@
 no-unused-vars
 one-var
-no-var
-consistent-return
+prefer-const
 eqeqeq
 no-undef
+eslint-disable-next-line no-plusplus

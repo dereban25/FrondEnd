@@ -1,9 +1,8 @@
 function getEvenOdd(a){
 	if (a%2 === 0){
 		return "even";
-	}else{
-		return "odd";
 	}
+		return "odd";
 }
 
-// getEvenOdd(4);
+getEvenOdd(4);

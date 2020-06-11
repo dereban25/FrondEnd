@@ -4,3 +4,4 @@ prefer-const
 eqeqeq
 no-undef
 eslint-disable-next-line no-plusplus
+no-return-assign

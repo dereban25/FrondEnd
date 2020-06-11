@@ -1,5 +1,13 @@
-function sum(a,b){
-	console.log(a +b);
-	return a + b;
+function checkSum(arr) {
+	if (!Array.isArray(arr)) {
+		return null;
+	}
+	let chSum = 0;
+	for (let sum of arr) {
+		chSum += sum;
+	}
+	return chSum > 100 ? true : false;
+	
 }
-// sum(5,2); 
+
+// console.log(checkSum([10,20,30]))

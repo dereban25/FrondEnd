@@ -1,5 +1,17 @@
-function sum(a,b){
-	console.log(a +b);
-	return a + b;
+function removeDuplicates(array) {
+	if (!Array.isArray(array)) {
+		return null;
+	}
+	let arrDuplicates = [];
+	for (let i = 0; i < array.length; i++) {
+		arrDuplicates.push(array[i]);
+		for (let j=i+1; j < array.length; j++) {
+			if(array[j]===array[i]){
+				arrDuplicates.pop(array[j]);
+			}
+		}
+	}
+	return arrDuplicates;
 }
-// sum(5,2); 
+
+// console.log(removeDuplicates([10,20,30,45,5,45,30,10]));

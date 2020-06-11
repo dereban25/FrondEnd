@@ -7,5 +7,6 @@
     "workbench.preferredHighContrastColorTheme": "Monokai",
     "backgroundImage.folderPath": "/Users/maksimderbenev/Desktop/My_Dream.jpg",
     "backgroundImage.opacity": 25,
-    "background.opacity": 35
+    "background.opacity": 35,
+    "git.ignoreLimitWarning": true
 }

@@ -1,0 +1,5 @@
+no-unused-vars
+one-var
+prefer-const
+eqeqeq
+no-undef

@@ -13,4 +13,4 @@ function uniqueCount(array) {
 	}
 	return arrDuplicates.length;
 }
-// console.log(uniqueCount([10,20,30,45,5,45,30,10]));
+// console.log(uniqueCount([10,20,30,1,45,5,45,10,30,10,20]));

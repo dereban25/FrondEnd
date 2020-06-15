@@ -1,6 +1,5 @@
 function addPropertyV1(obj, key, value) {
-	// eslint-disable-next-line no-param-reassign
-	obj.key = value;
+	obj[key] = value;
 	return obj;
 }
 
@@ -10,9 +9,8 @@ function addPropertyV2(obj, key, value) {
 }
 
 function addPropertyV3(obj, key, value) {
-	const newObj = Object.assign(obj, {[key]: value});
-	return newObj;
-	
+	let copy = Object.assign({}, obj, {[key]: value});
+	return copy;
 }
 
 function addPropertyV4(obj, key, value) {

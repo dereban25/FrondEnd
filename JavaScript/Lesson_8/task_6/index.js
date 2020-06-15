@@ -1,17 +1,22 @@
-function addPropertyV1(userData, userId){
-	userData.id = userId;
-	return userData;
+function addPropertyV1(obj, key, value) {
+	// eslint-disable-next-line no-param-reassign
+	obj.key = value;
+	return obj;
 }
 
-function addPropertyV2(userData, userId){
-	Object.assign(userData, {id: userId});
-	return userData;
+function addPropertyV2(obj, key, value) {
+	Object.assign(obj, {[key]: value});
+	return obj;
 }
 
-function addPropertyV3(userData, userId){
-	return Object.assign({id: userId}, userData,);
+function addPropertyV3(obj, key, value) {
+	const newObj = Object.assign(obj, {[key]: value});
+	return newObj;
+	
 }
 
-function addPropertyV4(userData, userId){
-	return {id: userId, ...userData};
+function addPropertyV4(obj, key, value) {
+	let copyObj = {...obj, [key]: value};
+	return copyObj;
 }
+

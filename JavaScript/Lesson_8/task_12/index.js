@@ -8,3 +8,5 @@ const getAdults = users => {
 	}
 	return newObj;
 };
+
+console.log(getAdults({'Bob':18,'Ted':20,'David':17}));

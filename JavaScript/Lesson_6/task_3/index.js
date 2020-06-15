@@ -8,3 +8,5 @@ function getSpecialNumbers(m, n) {
 	}
 	return specialNumbers;
 }
+
+console.log(getSpecialNumbers(10,15));

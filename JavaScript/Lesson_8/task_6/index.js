@@ -1,23 +1,17 @@
-const addPropertyV1 = (userData, userId) => {
+function addPropertyV1(userData, userId){
 	userData.id = userId;
 	return userData;
 }
 
-const addPropertyV2 = (userData, userId) => {
-	
-	const newObj = Object.assign(
-		userData, { id: userId });
-	return newObj;
+function addPropertyV2(userData, userId){
+	Object.assign(userData, {id: userId});
+	return userData;
 }
 
-const addPropertyV3 = (userData, userId) => {
-	
-	const newObj = Object.assign({}, userData, { id: userId });
-	newObj.id = userId;
-	return newObj;
+function addPropertyV3(userData, userId){
+	return Object.assign({id: userId}, userData,);
 }
 
-const addPropertyV4 = (userData, userId) => {
-	const newObj = Object.assign({...userData }, { id: userId });
-	return newObj;
+function addPropertyV4(userData, userId){
+	return {id: userId, ...userData};
 }

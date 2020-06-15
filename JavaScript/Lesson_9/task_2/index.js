@@ -1,1 +1,4 @@
-const copyObj = obj => Object.values(obj);
+const copyObj = obj => {
+	const copy = {...obj};
+	return copy;
+}

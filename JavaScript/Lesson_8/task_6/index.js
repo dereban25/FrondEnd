@@ -1,6 +1,6 @@
 const addPropertyV1 = (userData, userId) => {
 	userData.id = userId;
-	return userData;
+	return userData.id;
 }
 const addPropertyV2 = (userData, userId) => {
 	const copy = { id: userId };

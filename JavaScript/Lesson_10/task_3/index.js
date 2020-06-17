@@ -1,9 +1,8 @@
-function multiRound(num) {
-	let arr = [];
-	arr.push(Math.floor(num*100)/100);
-	arr.push(Math.round(num*100)/100);
-	arr.push(Math.ceil(num*100)/100);
-	arr.push(Math.trunc(num*100)/100);
-	arr.push(parseFloat(num.toFixed(2)));
-	return arr;
-}
+
+const multiRound = num => [
+	Math.floor(num * 100) / 100,
+	Math.round(num * 100) / 100,
+	Math.ceil(num * 100) / 100,
+	Math.trunc(num * 100) / 100,
+	Number(num.toFixed(2))
+];

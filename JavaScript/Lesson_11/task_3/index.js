@@ -1,8 +1,22 @@
-
-const multiRound = num => [
-	Math.floor(num * 100) / 100,
-	Math.round(num * 100) / 100,
-	Math.ceil(num * 100) / 100,
-	Math.trunc(num * 100) / 100,
-	Number(num.toFixed(2))
-];
+const splitString = (string, len = 10) => {
+	if (typeof string !== 'string')
+		return null;
+	
+	const strArr = [];
+	let start = 0;
+	
+	while (true) {
+		let chunk = string.substr(start, len);
+		
+		if (chunk.length === 0)
+			break;
+	
+		if (chunk.length < len)
+			chunk += '.'.repeat(len - chunk.length)
+		
+		strArr.push(chunk);
+		start += len;
+	}
+	
+	return strArr;
+};

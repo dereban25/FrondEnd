@@ -1,4 +1,12 @@
-const getParsedIntegers = arr => arr.map(num => Number.parseInt(num));
-const getParsedIntegersV2 = arr => arr.map(num => parseInt(num));
-const getParsedFloats = arr => arr.map(num => Number.parseFloat(num));
-const getParsedFloatsV2 = arr => arr.map(num => parseFloat(num));
+const sortContacts = (contactsArr, Boolean = true) => {
+	
+	if (!Array.isArray(contactsArr))
+		return null;
+	
+	const result = contactsArr.sort((a,b) => {
+		if (Boolean === false)
+			return b.name.localeCompare(a.name);
+		return a.name.localeCompare(b.name);
+	});
+	return result;
+};

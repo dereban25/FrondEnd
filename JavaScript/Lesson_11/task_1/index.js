@@ -16,4 +16,4 @@ const splitText = (text, num) => {
 	return strArr.join('\n');
 };
 
-console.log(splitText('Peter was bad man', 4));
+// console.log(splitText('Peter was bad man', 4));

@@ -1,10 +1,10 @@
 
-const getMaxAbsoluteNumber = arr => {
-	
-	if (!Array.isArray(arr) || arr == 0)
+const countOccurrences = (str, resultString) => {
+	if (resultString === '') {
 		return null;
-	
-	const absolute = arr.map(elem => Math.abs(elem));
-	
-	return Math.max(...absolute);
-};
+	}
+	return str.split(resultString).length-1;
+}
+
+
+console.log(countOccurrences("text is may may may",'ay'));

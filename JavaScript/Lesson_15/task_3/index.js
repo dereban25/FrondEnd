@@ -24,10 +24,28 @@ export function createLogger() {
 			});
 		},
 		getRecords: function(str) {
-			if (!str) {
-				return logger;
+			switch (str) {
+				case 'worn':
+					return records
+						.filter(el => el.type === 'worn')
+						.sort((a, b) => b.dateTime - a.dateTime);
+				
+				case 'log':
+					return records
+						.filter(el => el.type === 'log')
+						.sort((a, b) => b.dateTime - a.dateTime);
+				
+				case 'error':
+					return records
+						.filter(el => el.type === 'error')
+						.sort((a, b) => b.dateTime - a.dateTime);
+				
+				case undefined:
+					return records
+						.sort((a, b) => b.dateTime - a.dateTime);
+				
 			}
-			return logger.filter(el => el.type === str).sort((a, b) => b.dateTime.getTime() - a.dateTime.getTime());
+			return records;
 		}
 		
 	};

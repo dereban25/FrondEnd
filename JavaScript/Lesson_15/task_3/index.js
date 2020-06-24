@@ -1,34 +1,45 @@
+
 export function createLogger() {
-	let logger = [];
 	
-	return {
-		warn: function(str) {
-			logger.push({
-				message: str,
-				dateTime: new Date(),
-				type: 'warn',
-			});
-		},
-		error: function(str) {
-			logger.push({
-				message: str,
-				dateTime: new Date(),
-				type: 'error',
-			});
-		},
-		log: function(str) {
-			logger.push({
-				message: str,
-				dateTime: new Date(),
-				type: 'log',
-			});
-		},
-		getRecords: function(str) {
-			if (!str) {
-				return logger;
-			}
-			return logger.filter(el => el.type === str).sort((b, a) => b.dateTime.getTime() - a.dateTime.getTime());
-		}
+	let loggerArr = [];
+	
+	function warn(text) {
+		
+		loggerArr.push({
+			message: text,
+			dateTime: new Date(),
+			type: 'warn'
+		});
+	};
+	
+	function error(text) {
+		
+		loggerArr.push({
+			message: text,
+			dateTime: new Date(),
+			type: 'error'
+		});
+	};
+	
+	function log(text) {
+		
+		loggerArr.push({
+			message: text,
+			dateTime: new Date(),
+			type: 'log'
+		});
 		
 	};
-}
+	
+	function getRecords(type) {
+		return loggerArr.sort((acc, rec) => (acc.dateTime > rec.dateTime));
+	};
+	
+	return {
+		warn,
+		error,
+		log,
+		getRecords,
+	}
+};
+

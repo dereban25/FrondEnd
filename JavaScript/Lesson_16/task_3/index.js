@@ -15,3 +15,4 @@ function createArrayOfFunctions(num) {
 }
 
 export { createArrayOfFunctions };
+// console.log(createArrayOfFunctions(9)[5]());

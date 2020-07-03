@@ -1,15 +1,12 @@
-function spy(func) {
+'use strict';
+export function saveCalls(func) {
+	let calls = [];
+	withMemory.calls = calls;
 	
-	spyFunc.calls = [];
+	function withMemory(...infoCall) {
+		calls.push(infoCall);
+		return func.call(this, [func]);
+	};
 	
-	function spyFunc() {
-		spyFunc.calls.push([...arguments]);
-		return func.apply(this, arguments);
-	}
-	
-	return spyFunc;
-};
-
-
-
-export { spy };
+	return withMemory;
+}

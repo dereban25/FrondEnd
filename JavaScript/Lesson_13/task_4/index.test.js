@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/extensions
 import { calc } from './calculator.js';
 
 it('should  work correctly with operator "+"', () => {

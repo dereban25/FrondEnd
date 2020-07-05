@@ -9,4 +9,4 @@ function reverseArray(arr) {
 	return arrReverse;
 }
 
-// console.log(reverseArray([10, 20, 30]));
+console.log(reverseArray([10, 20, 30]));

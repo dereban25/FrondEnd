@@ -6,4 +6,4 @@ function getSubArray(arr,n) {
 	return newArray;
 }
 
-// console.log(getSubArray([10,20,30,45],3));
+console.log(getSubArray([10,20,30,45],3));

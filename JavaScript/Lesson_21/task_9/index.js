@@ -15,3 +15,4 @@ export function finishList() {
 	listElem.append(listItemElem8);
 	
 }
+// finishList();

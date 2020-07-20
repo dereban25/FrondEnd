@@ -1,6 +1,6 @@
-const generateNumbersRange = (start, end) => {
+const generateNumbersRange = (from, to) => {
 	const result = [];
-	for (let i = start; i <= end; i++) {
+	for (let i = from; i <= to; i++) {
 		result.push(i);
 	}
 	return result;
@@ -26,11 +26,9 @@ const renderArena = () => {
 	arenaElem.innerHTML = sectorsString;
 };
 
-const onSeatSelect=event => {
+const onSeatSelect = event => {
 	const isSeat = event.target.classList.contains('sector__seat');
-	if(!isSeat){
-		return;
-	}
+	if (!isSeat) return;
 	const seatNumber = event.target.dataset.seatNumber;
 	const lineNumber = event.target.closest('.sector__line').dataset.lineNumber;
 	const sectorNumber = event.target.closest('.sector').dataset.sectorNumber;

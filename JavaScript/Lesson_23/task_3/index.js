@@ -7,14 +7,20 @@ const tasks = [
 ];
 
 
-let addMessage = document.querySelector('.task-input');
+// let addMessage = document.querySelector('.task-input');
 let addButton = document.querySelector('.create-task-btn');
 let todoList = [];
 
-addButton.addEventListener('click', function() {
+function GetNewEl() {
+	let addMessage = document.getElementById('mean').value;
+	
+    console.log(addMessage);
+	tasks.push(addMessage);
+	console.log(tasks);
 	todoList.push(tasks);
 	renderListItems(todoList);
-});
+};
+addButton.addEventListener('click', GetNewEl);
 
 
 const renderListItems = listItems => {

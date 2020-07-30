@@ -1,29 +1,30 @@
 const tasks = [
-	{ text: 'Buy milk', done: false },
-	{ text: 'Pick up Tom from airport', done: false },
-	{ text: 'Visit party', done: false },
-	{ text: 'Visit doctor', done: true },
-	{ text: 'Buy meat', done: true },
+	{ text: 'Buy milk', done: false,id:Math.random.toString() },
+	{ text: 'Pick up Tom from airport', done: false ,id:Math.random.toString()},
+	{ text: 'Visit party', done: false ,id:Math.random.toString()},
+	{ text: 'Visit doctor', done: true ,id:Math.random.toString()},
+	{ text: 'Buy meat', done: true,id:Math.random.toString() },
 ];
 
 
-// let addMessage = document.querySelector('.task-input');
-let addButton = document.querySelector('.create-task-btn');
-let todoList = [];
+const addButton = document.querySelector('.create-task-btn');
 
-function GetNewEl() {
-	let addMessage = document.getElementById('mean').value;
-	
-    console.log(addMessage);
-	tasks.push(addMessage);
-	console.log(tasks);
-	todoList.push(tasks);
-	renderListItems(todoList);
+
+const onCreateTask = () => {
+	const addMessage = document.querySelector('.task-input');
+	const text = addMessage.value;
+	const test = {
+		text,
+		done:false,
+		id: Math.random.toString(),
+	};
+	tasks.push(test);
+	renderListItems(tasks);
 };
-addButton.addEventListener('click', GetNewEl);
+addButton.addEventListener('click', onCreateTask);
 
 
-const renderListItems = listItems => {
+const renderListItems = (listItems) => {
 	const listElem = document.querySelector('.list');
 	
 	const listItemsElems = listItems

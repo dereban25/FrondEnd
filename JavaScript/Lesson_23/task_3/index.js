@@ -13,6 +13,10 @@ const addButton = document.querySelector('.create-task-btn');
 const onCreateTask = () => {
 	const addMessage = document.querySelector('.task-input');
 	const text = addMessage.value;
+	if (!text){
+		return;
+	}
+	text.value = '';
 	const test = {
 		text,
 		done:false,

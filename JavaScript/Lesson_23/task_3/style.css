@@ -15,7 +15,6 @@ body {
 .todo-list {
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
     background-color: coral;
     border-radius: 8px;
     padding: 8px;
@@ -24,7 +23,6 @@ body {
 }
 
 .list {
-    margin: 0;
     padding: 0;
     list-style-type: none;
     margin: auto;
@@ -54,10 +52,11 @@ body {
     margin-right: 8px;
 }
 
+
 .btn {
     height: 32px;
     min-width: 64px;
-    border: 3px solid #ccc;
+    border: 3px solid #cccccc;
     outline: none;
     cursor: pointer;
     border-radius: 8px;
@@ -71,7 +70,7 @@ body {
 
 .task-input {
     height: 32px;
-    border: 3px solid #ccc;
+    border: 3px solid #cccccc;
     border-radius: 8px;
     flex: 1;
 }

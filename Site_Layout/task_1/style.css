@@ -793,8 +793,7 @@
   }
 }
 .inbox__bottom-line {
-  margin: 0;
-  margin-top: 28px;
+  margin: 28px 0 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #0185D0;
   background-blend-mode: overlay, normal;
   height: 4px;

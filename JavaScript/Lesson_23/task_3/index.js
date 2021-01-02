@@ -12,7 +12,23 @@ const addButton = document.querySelector('.create-task-btn');
 const renderListItems = (listItems) => {
 	const listElem = document.querySelector('.list');
 	
-	
+	const onCreateTask = () => {
+		const addMessage = document.querySelector('.task-input');
+		const text = addMessage.value;
+		if (!text) {
+			return;
+		}
+		text.value = '';
+		const test = {
+			text,
+			done: false,
+			id: Math.random.toString(),
+		};
+		tasks.push(test);
+		renderListItems(tasks);
+		console.log(test);
+	};
+	addButton.addEventListener('click', onCreateTask);
 	const listItemsElems = listItems
 		.sort((a, b) => a.done - b.done)
 		.map(({text, done}) => {
@@ -24,7 +40,7 @@ const renderListItems = (listItems) => {
 			const checkboxElem = document.createElement('input');
 			checkboxElem.setAttribute('type', 'checkbox');
 			checkboxElem.checked = done;
-			// checkboxElem.id = Math.random.id.toString();
+			// checkboxElem.id = Math.random.id.toString(5);
 			checkboxElem.classList.add('list__item-checkbox');
 			
 			listItemElem.append(checkboxElem, text);
@@ -32,23 +48,7 @@ const renderListItems = (listItems) => {
 			return listItemElem;
 		});
 	listElem.append(...listItemsElems);
-	const onCreateTask = () => {
-		const addMessage = document.querySelector('.task-input');
-		const text = addMessage.value;
-		if (!text) {
-			return;
-		}
-		text.value = '';
-		const test = {
-			text,
-			done: false,
-			// id: Math.random.id,
-		};
-		tasks.push(test);
-		renderListItems(tasks);
-		console.log(test);
-	};
-	addButton.addEventListener('click', onCreateTask);
+
 	
 	
 	// if (checkboxElem.checked){

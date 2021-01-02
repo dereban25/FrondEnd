@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Desktop/Ansible/.idea/Ansible.iml" filepath="$USER_HOME$/Desktop/Ansible/.idea/Ansible.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FrondEnd.iml" filepath="$PROJECT_DIR$/.idea/FrondEnd.iml" />
+      <module fileurl="file://$USER_HOME$/PythonProjects/Python_1/.idea/Python_1.iml" filepath="$USER_HOME$/PythonProjects/Python_1/.idea/Python_1.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/work/.idea/work.iml" filepath="$USER_HOME$/Desktop/work/.idea/work.iml" />
+    </modules>
+  </component>
+</project>

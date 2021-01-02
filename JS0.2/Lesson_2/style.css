@@ -1,0 +1,21 @@
+/*body{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+}
+button{
+    color:red;
+    background:#ffaa55;
+}
+button:hover{
+    color:green;
+    background:#ff3399;
+}
+button:active{
+    color:orange;
+    background:#3a6ba5;
+}

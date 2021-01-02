@@ -1,1 +1,6 @@
-console.log("Hello, world!");
+function c(){
+	for (var i =0 ;i<=4;i++){
+		setTimeout(()=>console.log(i));
+	}
+}
+c();

@@ -1,12 +1,3 @@
 {
-    "background.filepath": "/Users/maksimderbenev/Desktop/My_Dream.jpg",
-    "editor.cursorStyle": "line-thin",
-    "workbench.colorTheme": "Solarized Dark",
-    "workbench.preferredDarkColorTheme": "Solarized Dark",
-    "workbench.preferredLightColorTheme": "Kimbie Dark",
-    "workbench.preferredHighContrastColorTheme": "Monokai",
-    "backgroundImage.folderPath": "/Users/maksimderbenev/Desktop/My_Dream.jpg",
-    "backgroundImage.opacity": 25,
-    "background.opacity": 35,
     "git.ignoreLimitWarning": true
 }
